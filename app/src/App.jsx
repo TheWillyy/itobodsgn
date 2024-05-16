@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home/>} key="home"/>
           <Route path="/dump" element={<Dump/>} key="dump"/>
           <Route path="/casestudies/1" element={<CaseStudy1/>} key="cs1"/>
-          <Route path="*" element={<NotFound/>}/>
+          {/* <Route path="*" element={<NotFound/>}/> */}
         </Routes>
       </AnimatePresence>
     </>
