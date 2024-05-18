@@ -61,13 +61,7 @@ useEffect(()=>{
 
                 <Link className="custom-hover" onClick={()=>{setPosition(1)}} to="/dump" >All Work<span>2</span></Link>
 
-                <Link className="custom-hover" onClick={()=>{setPosition(2)}} style={{pointerEvents:"none", opacity:"0.25"}} >Parking<span>98</span></Link>
-
-                {/* <p onClick={()=>{setPosition(0)}}>Bio<span>1</span></p> */}
-
-                {/* <p onClick={()=>{setPosition(1)}}>All Work<span>2</span></p> */}
-
-                {/* <p onClick={()=>{setPosition(2)}}>Dump<span>3</span></p> */}
+                {/* <Link className="custom-hover" onClick={()=>{setPosition(2)}} style={{pointerEvents:"none", opacity:"0.25"}} >Empty<span>98</span></Link> */}
 
                 <div className='divider_vertical_small'></div>
 

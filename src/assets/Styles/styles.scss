@@ -828,34 +828,90 @@ footer{
 }
 
 @media screen and (max-width: 425px){
+    h1{
+        font-size: 24px;
+        line-height:150%;
+        // font-weight:600; //semibold
+        margin:0;
+    }
+    h2{
+        font-size: 18px;
+        margin:0;
+    }
+    h5{
+        font-size: 16px;
+        margin:0;
+    }
+    p{
+        font-size: 14px;
+        margin:0;
+    }
     nav{
+        // flex-direction:row-reverse;
+        width: calc(100vw);
+        // margin:0;
         .nav_title{
             display:none;
         }
         .status{
             display:none;
         }
+        .nav_tabs{
+            width:100%;
+        }
     }
     .nav_element_hover{
-        width: calc(100vw - 32px);
+        width: calc(100vw - 16px);
         padding: 8px 8px;
     }
     .intro, .work, .writing, footer{
         // background:Red;
-        padding:0 32px;
+        padding:0 16px;
         width:100vw;
         padding-top: 64px;
         padding-bottom: 64px;
     }
     .intro{
         padding-top: 128px;
-        padding-bottom: 64px;
+        padding-bottom: 0px;
+    }
+    .bio_text_container{
+        gap:4px;
+        .extended_bio_text_container{
+            margin:0 !important;
+        }
+    }
+    .cta_container{
+        .cta_buttons{
+            flex-direction:row;
+            flex-wrap: wrap;
+            button:nth-of-type(1){
+                flex-basis:100%;
+                height:56px;
+            }
+        }
+        p{
+            display:none;
+        }
     }
     .pfp, .pfp_resume{
         display:none;
     }
     .work{
         grid-row-gap: 32px;
+    }
+    .dump{
+        padding: 156px 16px 128px 16px;
+        width:100vw;
+        .dump_items{
+            grid-template-columns: 1fr;
+            grid-gap: 32px;
+        }
+        .dump_card{
+            width:100%;
+            max-width: none;
+        }
+
     }
     .dump_thumbnail_outer{
         width: calc(100vw - 64px) !important;
@@ -888,45 +944,32 @@ footer{
         overflow: visible !important;
         position:absolute;
         left:0;
-        width:calc(100vw + 64px) !important;
+        width: calc(100vw + 32px) !important;
         padding-top:8px;
-    }
-    h1{
-        font-size: 32px;
-        line-height:150%;
-        // font-weight:600; //semibold
-        margin:0;
-    }
-    h2{
-        font-size: 24px;
-        margin:0;
-    }
-    h5{
-        font-size: 18px;
-        margin:0;
-    }
-    p{
-        font-size: 14px;
-        margin:0;
     }
 
     .casestudy{
-        padding: 128px 32px 128px 32px;
+        padding: 128px 16px 128px 16px;
+        gap:32px;
         .casestudy_info_metadata{
             flex-direction:column;
             gap:16px;
         }
         .casestudy_imglarge{
             width:100%;
+            border-radius: 16px;
         }
         .casestudy_imgsmall{
             gap:16px;
+            div{
+                border-radius: 16px;
+            }
         }
         .casestudy_bodytext {
             padding:0;
         }
         .casestudy_thankyou {
-            padding:64px 0;
+            padding:0 !important;
         }
         .back-to-top h1{
             font-size:24px;
@@ -946,7 +989,32 @@ footer{
             top:0;
             bottom:unset;
         }
+        section{
+            gap:8px;
+            .casestudy_subheader{
+                width:100%;
+            }
+            width:100%;
+        }
+        .casestudy_subheader{
+            width:100%;
+        }
+        .back-to-top{
+            flex-direction:column;
+            gap:32px;
+            h1{
+                max-width:none;
+                width:100%;
+            }
+        }
+        iframe{
+            width:100%;
+        }
     }
+    .casestudy_thankyou {
+        padding:0;
+    }
+
 }
 
 @media screen and (max-width: 1000px) and (min-width:768px){
