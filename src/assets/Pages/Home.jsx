@@ -17,21 +17,22 @@ import resume from "../Media/Images/resume.jpeg"
 
 
 //TODO
-//Fix weird zoom thing
-//Fix weird Font thing on mobile
-//fix case study NAv on mbile
-//fix case study entry scroll thing on mobile
-//fix weird space on dump
-//make nav persist on currnet url
-//weird lack of border radius on first workitem
+//Fix weird zoom thing [FIXED]
+//fix case study NAv on mbile [Fixed]
+//fix weird space on dump [fixed]
+//writing links should open in new tab [done]
+//send a raven custom message to my mail [done]
+//weird lack of border radius on first workitem 
 //progressive blur on workitem base
-//writing links should open in new tab
-//spotify for bottom link
 //custom cursor for bottm
-//send a raven custom message to my mail
 //footer video
 //404 image
 //change favicon
+//make nav persist on currnet url
+//spotify for bottom link
+//fix case study entry scroll thing 
+//Fix weird Font thing on mobile 
+
 
 function Home(){
     const [extendedBioVisible, setExtendedBioVisible] = useState(false);
@@ -87,16 +88,24 @@ function Home(){
                 <div className='cta_container'>
                     <div className='cta_buttons'>
                     <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
-                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='Download My Resume'/>
+                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume'/>
                         <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin}/>
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble}/>
                         <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers}/>
                     </div>
-                    <p>Updated Apr 1st 2024 </p>
+                    <p>Updated 1 Apr</p>
                 </div>
             </div>
 
             <div className='work'>
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
+                        onClick={()=>{navigate("/casestudies/1")}} 
+                        titleSm='Indriver'
+                        titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
+                        type="Product / UX"
+                        year="2021"
+                />             
 
                 <WorkItem comingsoon coverimg='https://res.cloudinary.com/dhlkiskhn/image/upload/v1715874278/apiconf_cover.jpg'
                     type="Brand & UI Design"
@@ -105,18 +114,10 @@ function Home(){
                     titleSm="API Conference Lagos"
                 />
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
-                    onClick={()=>{navigate("/casestudies/1")}} 
-                    titleSm='Indriver'
-                    titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
-                    type="Product / UX"
-                    year="2021"
-                />
-
                 <div className='dump_link custom-hover' onClick={()=>{navigate("/dump")}}>
                     <div className='dump_thumbnail_outer'>
                         <div className='title_lg'>
-                            <h2>archived work</h2>
+                            <h2>archived work.</h2>
                         </div>
                         <div className='dump_thumbnail_inner'>
                             <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif" alt="" srcset="" />

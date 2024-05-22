@@ -65,12 +65,12 @@ useEffect(()=>{
 
                 <div className='divider_vertical_small'></div>
 
-                <a className="custom-hover" href="">Send a Raven<span>&#x2197;</span></a>
+                <a className="custom-hover" href="mailto:williams.eitobo@gmail.com?subject=Hello, Williams&body=Hi, Here's a Raven with a message. My name is">Send a Raven<span>&#x2197;</span></a>
             </div>
 
             <div className='status'>
                 <h5>{thLive}:{tmLive} Lagos, NG</h5>
-                <h5>Available</h5>
+                <h5>Open to Work</h5>
                 {/* probably sleeping */}
             </div>
         </nav>

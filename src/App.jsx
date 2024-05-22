@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import {Router, Route, Routes, useLocation } from 'react-router-dom';
 import './App.css'
 import Home from './assets/Pages/Home'
@@ -11,6 +11,11 @@ import { AnimatePresence } from "framer-motion";
 
 function App() {
   const location = useLocation();
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
 
   return (
