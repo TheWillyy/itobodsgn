@@ -14,6 +14,25 @@ import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import pfp from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
 
+
+
+//TODO
+//Fix weird zoom thing
+//Fix weird Font thing on mobile
+//fix case study NAv on mbile
+//fix case study entry scroll thing on mobile
+//fix weird space on dump
+//make nav persist on currnet url
+//weird lack of border radius on first workitem
+//progressive blur on workitem base
+//writing links should open in new tab
+//spotify for bottom link
+//custom cursor for bottm
+//send a raven custom message to my mail
+//footer video
+//404 image
+//change favicon
+
 function Home(){
     const [extendedBioVisible, setExtendedBioVisible] = useState(false);
     const [intropfpVisible, setIntropfpVisible] = useState(false);
@@ -53,7 +72,7 @@ function Home(){
                 {/* <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
                 <div className='bio_text_container'>
 
-                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>––Digital Product Designer based in Lagos, Nigeria.</h1>
+                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product Designer based in Lagos, Nigeria.</h1>
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
                         <h1><span>Designer by day, Artist in between, and Comedy Enthusiast by night. Despite my introverted personality, I have the ability to learn essential info from people by asking the right questions. Conveniently, I have seen it overlap in my role in human research as a product designer over the years. 
@@ -115,15 +134,15 @@ function Home(){
             <div className='writing'>
                 <section>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696"><span><p>2022</p></span>Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7"><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00"><span><p>2020</p></span>Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span><p>2020</p></span>Prototyping with Figma</a>
                 </section>
                 
                 <section>
                     <p className='writing_title'>Resources</p>
-                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c">Heuristic Evaluation Report Template</a>
-                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07">DSC UI/UX Study Group Starter Resources</a>
+                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template</a>
+                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources</a>
                 </section>
             </div>
 

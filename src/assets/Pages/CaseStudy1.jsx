@@ -104,7 +104,7 @@ function CaseStudy1(){
             <br>
             <ul>
               <li>a sizeable number of people encountered issues with <b>geolocation and matching<b/> with drivers </li>
-              <li>some drivers <b>inappropriately contact riders<b/> outside the confines of transporting them to their destinations </li>
+              <li>some drivers <b>inappropriately contact riders/b> outside the confines of transporting them to their destinations </li>
               <li> <b>inactive customer support<b/> systems and centers. </li>
             </ul>"
           />
