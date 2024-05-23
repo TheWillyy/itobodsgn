@@ -140,4 +140,10 @@
 
 .comingsoon{
     pointer-events: none;
+    &:hover{
+        pointer-events: none;
+        img{
+            border-radius:32px;
+        }
+    }
 }
