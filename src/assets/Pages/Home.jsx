@@ -179,7 +179,7 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            playsinline autoplay muted loop
+                            playsinline muted autoplay loop
                             src={footervid}
                             className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
