@@ -37,7 +37,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
 
         :
 
-        <div className='workitem_card custom-hover' onClick={onClick}>
+        <div className={comingsoon? 'workitem_card custom-hover comingsoon': 'workitem_card custom-hover'} onClick={onClick}>
             <div className='cover_container'>
 
                 <div className='title_lg' style={comingsoon? {filter: "blur(0px)", color:"#1F1F1F", opacity: "1", transform: "translateY(-16px)"}: {} }>
