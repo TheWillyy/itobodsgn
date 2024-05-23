@@ -380,6 +380,7 @@ nav{
         transition:var(--transition6s);
         // cursor:pointer;
         margin:auto;
+        color:#B2B2B2;
 
         .dump_thumbnail_outer {
             background:#F5F5F5;
@@ -538,13 +539,9 @@ footer{
                 height:128px;
                 background:#000000;
                 object-fit:cover;
-                // visibility: hidden;
-                // position:absolute;
-                // top:0;
+                border-radius:8px;
                 opacity:0;
                 transition: var(--transition6s);
-                //add transition delay
-                //should be proportional pls
             }
             .credits_video_reveal{
                 visibility:visible;

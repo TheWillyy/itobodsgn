@@ -33,6 +33,7 @@ import footervid from "../Media/Videos/0523 footer.mp4"
 //fix case study entry scroll thing 
 //spotify for bottom link
 //Fix weird Font thing on mobile 
+//section with sticky note
 
 
 function Home(){
@@ -130,12 +131,6 @@ function Home(){
                     titleLg="Coming Soon"
                     titleSm="API Conference Lagos"
                 />
-                <WorkItem comingsoon coverimg='https://res.cloudinary.com/dhlkiskhn/image/upload/v1715874278/apiconf_cover.jpg'
-                    type="Brand & UI Design"
-                    year="2024"
-                    titleLg="Coming Soon"
-                    titleSm="API Conference Lagos"
-                />
 
                 <div className='dump_link custom-hover' onClick={()=>{navigate("/dump")}}>
                     <div className='dump_thumbnail_outer'>
@@ -208,13 +203,14 @@ function Home(){
                     }}
                     onMouseEnter={()=>{
                         setIntrovidVisible(true);
-                        // document.querySelectorAll(".credits_video")[0].play()
+                        document.querySelectorAll(".credits_video")[0].play()
                     }}  
                     onMouseMove={()=>{
                         // changeVidPosition(this);
                     }}
                     onMouseLeave={()=>{
                         setIntrovidVisible(false);
+                        // document.querySelectorAll(".credits_video")[0].stop()
                     }}>
                         
                     <svg width="100%" height="100%" viewBox="0 0 1277 131" fill="none" xmlns="http://www.w3.org/2000/svg">
