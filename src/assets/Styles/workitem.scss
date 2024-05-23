@@ -140,10 +140,17 @@
 
 .comingsoon{
     pointer-events: none;
+    -webkit-user-select: none; 
+    -webkit-touch-callout: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;  
     &:hover{
         pointer-events: none;
         img{
             border-radius:32px;
+            pointer-events: none;
+
         }
         .cover_container::before{
             content:'';
