@@ -148,6 +148,8 @@
         .cover_container::before{
             content:'';
             background: none;
+            position:static;
+            backdrop-filter:blur(0);
         }
     }
 }
