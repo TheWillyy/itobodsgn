@@ -145,5 +145,9 @@
         img{
             border-radius:32px;
         }
+        .cover_container::before{
+            content:'';
+            background: none;
+        }
     }
 }
