@@ -145,12 +145,38 @@
     -moz-user-select: none; 
     -ms-user-select: none; 
     user-select: none;  
+    filter: blur(0px);
+    color:#1F1F1F;
+    opacity: 1;
+    transform: translateY(-16px);
     &:hover{
         pointer-events: none;
         img{
             border-radius:32px;
             pointer-events: none;
 
+        }
+        .cover_container::before{
+            content:'';
+            background: none;
+            position:static;
+            backdrop-filter:blur(0);
+        }
+    }
+}
+
+@media screen and (max-width: 425px){
+    .comingsoon{
+        pointer-events: none;
+        -webkit-user-select: none; 
+        -webkit-touch-callout: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;  
+        pointer-events: none;
+        img{
+            border-radius:32px;
+            pointer-events: none;
         }
         .cover_container::before{
             content:'';
