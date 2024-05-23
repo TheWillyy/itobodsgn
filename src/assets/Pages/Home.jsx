@@ -107,6 +107,12 @@ function Home(){
                         year="2021"
                 />             
 
+                <WorkItem comingsoon 
+                    type="Brand & UI Design"
+                    year="2024"
+                    titleLg="Coming Soon"
+                    titleSm="API Conference Lagos"
+                />
                 <WorkItem comingsoon coverimg='https://res.cloudinary.com/dhlkiskhn/image/upload/v1715874278/apiconf_cover.jpg'
                     type="Brand & UI Design"
                     year="2024"

@@ -45,7 +45,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
                     {/* cut by ellipsis on height limit */}
                 </div>
 
-                {coverimg? <img style={comingsoon? {filter:"blur(24px)"} : {} } src={coverimg} alt="" /> : ''}
+                {coverimg? <img src={coverimg} alt="" /> : ''}
 
                 <div className='workitem_desc' style={comingsoon? {bottom:"calc(100% - 48px)", top:"0"}: {} }>
                     <div className='workitem_type'>{type || "Type"}</div>
