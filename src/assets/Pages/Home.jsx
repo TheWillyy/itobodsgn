@@ -28,10 +28,10 @@ import footervid from "../Media/Videos/0523 footer.mp4"
 //change favicon [done]
 //progressive blur on workitem base [doneish -  we settled]
 //404 image [done]
-//footer video
+//footer video [done]
 //make nav persist on currnet url
-//spotify for bottom link
 //fix case study entry scroll thing 
+//spotify for bottom link
 //Fix weird Font thing on mobile 
 
 
