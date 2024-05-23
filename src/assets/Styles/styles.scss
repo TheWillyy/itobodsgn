@@ -858,11 +858,12 @@ footer{
         }
         .nav_tabs{
             width:100%;
+            box-shadow: none;
         }
     }
     .nav_element_hover{
         width: calc(100vw - 16px);
-        padding: 8px 8px;
+        padding: 0;
     }
     .intro, .work, .writing, footer{
         // background:Red;
