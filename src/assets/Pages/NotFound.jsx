@@ -1,10 +1,7 @@
 import { Link, useNavigate } from "react-router-dom"
 import Button from '../Components/Button.jsx'
+import notfoundimg from '../Media/Images/notfound-img.jpeg'
 import styles from "../Styles/styles.scss"
-import Reading from '../Components/Reading.jsx'
-import WorkItem from '../Components/WorkItem.jsx'
-import transition from '../../transitions.jsx'
-import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 
 function NotFound(){
   
@@ -17,7 +14,7 @@ function NotFound(){
 
       <div className='page_404_container'>
         <span><h1>4</h1></span>
-        <div><img src="" alt="" /></div>
+        <div><img src={notfoundimg} alt="picture of a hand with all fingers together in a pinching gesture as a prank" /></div>
         <span><h1>4</h1></span>
       </div>
 

@@ -13,6 +13,7 @@ import transition from '../../transitions.jsx'
 import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import pfp from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
+import footervid from "../Media/Videos/0523 footer.mp4"
 
 
 
@@ -22,12 +23,12 @@ import resume from "../Media/Images/resume.jpeg"
 //fix weird space on dump [fixed]
 //writing links should open in new tab [done]
 //send a raven custom message to my mail [done]
-//weird lack of border radius on first workitem 
-//progressive blur on workitem base
-//custom cursor for bottm
+//weird lack of border radius on first workitem [done]
+//custom cursor for bottm [done]
+//change favicon [done]
+//progressive blur on workitem base [doneish -  we settled]
+//404 image [done]
 //footer video
-//404 image
-//change favicon
 //make nav persist on currnet url
 //spotify for bottom link
 //fix case study entry scroll thing 
@@ -40,6 +41,7 @@ function Home(){
     const [introresumeVisible, setIntroResumeVisible] = useState(false);
     const [introvidVisible, setIntrovidVisible] = useState(false);
     const [introVidPosition, setIntroVidPosition] = useState({ x: 0});
+    const [mailCopied, setMailCopied] = useState(false);
     
     useEffect(()=>{
 
@@ -63,7 +65,22 @@ function Home(){
         setTimeout(disappearReset, 2000);
     }
 
+    const mailcopytimeout = () => {
+        setMailCopied(false)
+    }
 
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText("williams.eitobo@gmail.com")
+        //   .then(() => {
+        //     alert('copied!');
+        //   })
+          .catch(err => {
+            console.error('Failed to copy text: ', err);
+          });
+
+        setMailCopied(true)
+        setTimeout(mailcopytimeout, 2000)
+    };
 
   return(
     <>
@@ -162,7 +179,9 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`} src=""
+                            controls playsinline autoplay muted loop
+                            src={footervid}
+                            className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
                                 transform:`translateX(${
                                     // (introVidPosition.x < window.screen.width/2? -introVidPosition.x/4 : introVidPosition.x/4)
@@ -170,7 +189,7 @@ function Home(){
                                 }px)`
                             }}
                             ></video>
-                        <p>Designed and Developed by the Stellar Team (Me)</p>
+                        <p>{mailCopied? "Mail Copied!": "Designed and Developed by the Stellar Team (Me)"}</p>
                     </div>
 
                     <div className='links'>
@@ -184,8 +203,12 @@ function Home(){
                 </div>
 
                 <div className='email_lg' 
+                    onClick={()=>{
+                        copyToClipboard()
+                    }}
                     onMouseEnter={()=>{
                         setIntrovidVisible(true);
+                        // document.querySelectorAll(".credits_video")[0].play()
                     }}  
                     onMouseMove={()=>{
                         // changeVidPosition(this);

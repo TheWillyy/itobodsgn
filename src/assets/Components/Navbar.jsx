@@ -46,6 +46,7 @@ useEffect(()=>{
   return (
 
     <>
+        <div className='prog_blur'></div>
         <nav className={scrollY > 32 ? 'nav_element_hover' : ''}  style={ currentlocation === "/" || "/dump" || "/casestudies/1" ? { } : {display:"none"} } >
             <div className='nav_title'>
                 <h5>Williams Eni</h5>
