@@ -14,6 +14,7 @@ import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import pfp from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
+import StickyNote from '../Components/StickyNote.jsx'
 
 
 
@@ -29,11 +30,12 @@ import footervid from "../Media/Videos/0523 footer.mp4"
 //progressive blur on workitem base [doneish -  we settled]
 //404 image [done]
 //footer video [done]
-//make nav persist on currnet url
+//make nav persist on currnet url [done]`
+//section with sticky note
 //fix case study entry scroll thing 
 //spotify for bottom link
 //Fix weird Font thing on mobile 
-//section with sticky note
+//edit bio
 
 
 function Home(){
@@ -132,6 +134,20 @@ function Home(){
                     titleSm="API Conference Lagos"
                 />
 
+            </div>
+
+            <div className='work2'>
+
+                <StickyNote text="
+                    <ul>
+                        <li>praise tha lord</li>
+                        <li>break da law</li>
+                        <li>take what's mine</li>
+                        <li>take some more </li>
+                    </ul>
+                "
+            />
+
                 <div className='dump_link custom-hover' onClick={()=>{navigate("/dump")}}>
                     <div className='dump_thumbnail_outer'>
                         <div className='title_lg'>
@@ -147,7 +163,6 @@ function Home(){
 
                     <h5>#dump</h5>
                 </div>
-
             </div>
 
             <div className='writing'>
@@ -174,7 +189,7 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            playsinline muted autoplay loop
+                            playsInline muted autoPlay loop
                             src={footervid}
                             className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
@@ -203,7 +218,7 @@ function Home(){
                     }}
                     onMouseEnter={()=>{
                         setIntrovidVisible(true);
-                        document.querySelectorAll(".credits_video")[0].play()
+                        // document.querySelectorAll(".credits_video")[0].play()
                     }}  
                     onMouseMove={()=>{
                         // changeVidPosition(this);

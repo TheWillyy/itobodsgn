@@ -54,7 +54,7 @@ useEffect(()=>{
             </div>
 
             <div className='nav_tabs'>
-                <div className={pillPosition[position]}></div>
+                <div className={currentlocation == "/dump" ? pillPosition[1] : pillPosition[position]} style={ currentlocation == "/dump" || currentlocation == "" || currentlocation == "/" ? {opacity:"1"} : {opacity:"0"}}></div>
 
                 {/* automatically set position to whatever tab we're at */}
 

@@ -12,6 +12,7 @@ html{
     font-weight: normal;
     font-style: normal;
 }
+@import url('https://fonts.googleapis.com/css2?family=Chilanka&display=swap');
 
 body{
     // background-color: red;
@@ -354,22 +355,21 @@ nav{
     }
 }
 
-.work{
+.work, .work2{
     padding: 64px 10vw;
     width:calc(100vw - 20vw);
     display: flex;
     flex-direction:row;
     // justify-content: center; //only use this for smaller screen sizes
     flex-wrap: wrap;
-
     grid-template-columns: auto auto auto;
     grid-column-gap: 32px;
     grid-row-gap: 64px;
     align-items: center;
 
-    .workitem_card:nth-last-child(2){
-        max-width:640px
-    }
+    // .workitem_card:nth-last-child(2){
+    //     max-width:640px
+    // }
 
     .dump_link{
         display:flex;
@@ -379,7 +379,7 @@ nav{
         min-height:320px;
         transition:var(--transition6s);
         // cursor:pointer;
-        margin:auto;
+        margin-right:auto;
         color:#B2B2B2;
 
         .dump_thumbnail_outer {
@@ -457,6 +457,46 @@ nav{
                     transition:var(--transition3s);
                 }
             }
+        }
+    }
+}
+
+.work2{
+    gap:128px;
+}
+.stickynote{
+    background:#FFD89E;
+    transition:var(--transition6s);
+    min-height:320px;
+    width:320px;
+    margin-left:auto;
+    border-radius:32px;
+    display:flex;
+    transform: rotate(-5deg);
+    box-shadow: 0 2px 8px #80808010,
+    0 12px 24px #80808010;
+    div{
+        background-color:#FFE2A8;
+        height:304px;
+        width:304px;
+        border-radius:32px;
+        margin:auto auto;
+        overflow-y:hidden;
+        transform: rotate(5deg);
+        transition:var(--transition6s);
+        box-shadow: 0 2px 8px #80808010,
+        0 12px 24px #80808010;
+        p{
+            padding:16px;
+            font-size:18px;
+            font-family: "Chilanka", cursive;
+            width:240px;
+            line-height:200%;
+            li{
+                font-size:18px;
+                width:100%;
+            }
+
         }
     }
 }
@@ -918,7 +958,7 @@ footer{
     .pfp, .pfp_resume{
         display:none;
     }
-    .work{
+    .work, .work2{
         grid-row-gap: 32px;
     }
     .dump{
