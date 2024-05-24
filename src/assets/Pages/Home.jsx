@@ -31,7 +31,7 @@ import StickyNote from '../Components/StickyNote.jsx'
 //404 image [done]
 //footer video [done]
 //make nav persist on currnet url [done]`
-//section with sticky note
+//section with sticky note [done]
 //fix case study entry scroll thing 
 //spotify for bottom link
 //Fix weird Font thing on mobile 
