@@ -1,20 +1,25 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
+import transition from '../../transitions.jsx'
+import styles from "../Styles/styles.scss"
 import Button from '../Components/Button.jsx'
 import WorkItem from '../Components/WorkItem.jsx'
 import NowPlaying from '../Components/NowPlaying.jsx'
 import Navbar from '../Components/Navbar.jsx'
-import styles from "../Styles/styles.scss"
 import Reading from '../Components/Reading.jsx'
+import StickyNote from '../Components/StickyNote.jsx'
 import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
-import transition from '../../transitions.jsx'
-import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import pfp from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
-import StickyNote from '../Components/StickyNote.jsx'
+import photoshop from "../Media/Images/Photoshop.png"
+import illustrator from "../Media/Images/Illustrator.png"
+import figma from "../Media/Images/Figma.png"
+import principle from "../Media/Images/PrincipleApp.png"
+import ae from "../Media/Images/Aftereffects.png"
+import rive from "../Media/Images/Rive.jpeg"
 
 
 
@@ -93,11 +98,13 @@ function Home(){
                 {/* <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
                 <div className='bio_text_container'>
 
-                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product Designer based in Lagos, Nigeria.</h1>
+                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
-                        <h1><span>Designer by day, Artist in between, and Comedy Enthusiast by night. Despite my introverted personality, I have the ability to learn essential info from people by asking the right questions. Conveniently, I have seen it overlap in my role in human research as a product designer over the years. 
-                            I have employed my keen attention to detail and strive for excellence to work with brands and companies alike to match their product and customer needs, and over time, built trust in the practise of collaboration and clear communication </span></h1>
+                        <h1>For over 5 years, I have enjoyed crafting incredible visual experiences in UX and Graphic design
+                            with mainly (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) for design and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
+                            <br/>I'm always ever open to chat about design or collaborate on designing creative web and mobile experiences.
+                        </h1>
                     </div>
 
                     <h2 className='read_more custom-hover' onClick={()=>{
@@ -136,6 +143,29 @@ function Home(){
 
             </div>
 
+            <div className='writing'>
+                <section>
+                    <p className='writing_title'>Professional Work History</p>
+                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Freelancing and Open to Work</a>
+                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Product Designer &#x2192; TCI, UK</a>
+                    <a style={{pointerEvents:"none"}}><span><p>2022 - 2023</p></span>Founding Product Designer &#x2192; SourceMyGadgets, NG</a>
+                    <a style={{pointerEvents:"none"}}><span><p>2019</p></span>UI Designer &#x2192; Malon Global Tech, NG</a>
+                </section>
+
+                <section>
+                    <p className='writing_title'>Literature</p>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span><p>2020</p></span>Prototyping with Figma</a>
+                </section>
+                
+                <section>
+                    <p className='writing_title'>Resources</p>
+                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template</a>
+                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources</a>
+                </section>
+            </div>
+
             <div className='work2'>
 
                 <StickyNote text="
@@ -163,21 +193,6 @@ function Home(){
 
                     <h5>#dump</h5>
                 </div>
-            </div>
-
-            <div className='writing'>
-                <section>
-                    <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span><p>2020</p></span>Prototyping with Figma</a>
-                </section>
-                
-                <section>
-                    <p className='writing_title'>Resources</p>
-                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template</a>
-                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources</a>
-                </section>
             </div>
 
             <footer>

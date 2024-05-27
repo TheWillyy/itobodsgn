@@ -9,7 +9,7 @@ function StickyNote({text=""}){
     <>
         <div className='stickynote' 
              onMouseEnter={()=>{
-                setRandomDeg(Math.floor((Math.random() * 5) + 1))
+                setRandomDeg(Math.floor((Math.random() * 10) + 1))
                 // setRandomDeg(Math.floor((Math.random()  * (-2 - 2) + -2 )))
              }}
         >

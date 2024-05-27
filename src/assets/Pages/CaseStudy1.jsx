@@ -60,14 +60,14 @@ function CaseStudy1(){
         }}
         />
 
-        <ImgLarge/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png" alt="Cover image of shots of redesigned indriver app"/>
 
         <BodyText
             text="InDriver was introduced to Nigeria in August 2019 and has already connected more than 6,000 drivers in Lagos, competing side by side with Uber and Bolt, the existing prominent ride hailing services in Nigeria. One of the principles of the InDriver service are that cost of booking rides is always lower, passengers who use the app pay on average 20% less than other prominent hailing services.
             <br/><br/>Despite such attractive negotiability of fares enough to have a large chunk of users in its market, InDriver has not had huge enough adoption compared to the others."
         />
 
-        <ImgSmall/>
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739827/My%20Portfolio/jgcqhr4vprapeu2rpr4u.jpg" img1alt="fromt view of various yellow taxi cabs in lagos state" img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/uefuczcbxdmg003e6dvb.jpg" img2alt="side view of a yellow taxi in lagos state, the taxi is in motion"/>
 
         <section>
           <Subheader text="Why?"/>
@@ -80,7 +80,7 @@ function CaseStudy1(){
  
         <BillboardText text="What specific issues affect the adoption and usage of InDriver among commuters?" />
 
-        <ImgLarge/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/ec0aoiz4wshl1z1dkstl.png" alt="image of the modals to book a ride on the current and proposed redesign if the indriver app, side by side"/>
 
         <section>
           <Subheader text="Heurisic Evaluation"/>
@@ -95,7 +95,7 @@ function CaseStudy1(){
           />
         </section>
 
-        <ImgLarge/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739831/My%20Portfolio/nk7zusjh8yo8pupxahw4.png" alt="top critical revies of the app on app store and google play store"/>
 
         <section>
           <Subheader text="App Store Reviews"/>
@@ -103,14 +103,14 @@ function CaseStudy1(){
               text="With Appstore Reviews being an important source of user feedback from users who have actually used the application, I went through critical reviews on the application on Google Play Store and discovered that: 
             <br>
             <ul>
-              <li>a sizeable number of people encountered issues with <b>geolocation and matching<b/> with drivers </li>
-              <li>some drivers <b>inappropriately contact riders/b> outside the confines of transporting them to their destinations </li>
-              <li> <b>inactive customer support<b/> systems and centers. </li>
+              <li>a sizeable number of people encountered issues with <b>geolocation and matching</b> with drivers </li>
+              <li>some drivers <b>inappropriately contact riders</b> outside the confines of transporting them to their destinations </li>
+              <li> <b>inactive customer support</b> systems and centers. </li>
             </ul>"
           />
         </section>
         
-        <ImgLarge/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739830/My%20Portfolio/oynrx6nkkzi8leb4re9n.png" alt="projected user personas"/>
 
         <section>
           <Subheader text="User Interviews"/>
@@ -140,8 +140,6 @@ function CaseStudy1(){
               </ul>"
           />
         </section>
-
-        <ImgSmall/>
         
         <section>
           <Subheader text="Recommendation"/>
@@ -168,7 +166,7 @@ function CaseStudy1(){
         </section>
         
           <Subheader text="In-app calling. This way, it is easier to preserve rider anonymity." />
-          <ImgLarge />
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fcn8acsvpqljlk9ytps6.png" alt="screenshot showing in app calling feature"/>
 
         <section>
           <Subheader text="Improving customer support and how driver misconduct is handled." />
@@ -179,19 +177,19 @@ function CaseStudy1(){
           <Subheader text="Quick options for reporting based on the most frequent occurrences of misconduct." />
           <BodyText text="One way may be to suspend the account of the defaulting driver if the payment confirmation does not match the agreed fare and the responsiveness of the virtual customer service systems could better solve this."/>
         </section>
-          <ImgLarge />
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/fzxjm4ihqmxwean6r0gj.png" alt="Screen showing quick support options"/>
 
         <section>
           <Subheader text="Suggesting that riders tip their drivers for trips that take longer than expected." />
           <BodyText text="Quick options for riders to leave a tip for their drivers and prompts for drivers to confirm the receipt. The confirmation action was included in case the tipping metrics need to be monitored."/>
         </section>
-          <ImgLarge />
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/e1wt6kc6nlsqbyf2cbbr.png" alt="screen showing tip"/>
 
         <section>
           <Subheader text="Visual cues for driver and rider location" />
           <BodyText text="Although this may be best handled and as an engineering issue but using visual cues to denote available drivers close to the searching rider (probably car icons on the map) alongside providing appropriate feedback with why there may be a delay in finding drivers for their trip."/>
         </section>
-          <ImgLarge />
+          <ImgLarge style={{objectFit:"contain"}} src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/qzhzqsuckkca7drwwko4.gif" alt="screen showing driver location"/>
 
         <section>
           <Subheader text="How success was measured" />

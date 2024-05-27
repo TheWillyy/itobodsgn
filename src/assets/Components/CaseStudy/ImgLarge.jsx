@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react'
 
-function ImgLarge({src, alt, caption}){
+function ImgLarge({style, src, alt, caption}){
 
   return(
     <>
         <div className='casestudy_imglarge'>
-            <img src={src} alt={alt} />
+            <img style={style} src={src} alt={alt} />
         </div>
     </>
   )

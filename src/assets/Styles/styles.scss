@@ -4,6 +4,8 @@ html{
         #F5F5F5,
         #FFFFFF
     );
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     //should not repeat
 }
 @font-face {
@@ -19,8 +21,20 @@ body{
     margin:0;
     padding:0;
     scroll-behavior: smooth;
+    overscroll-behavior-y: none;
     font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+  
+  .scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    will-change: transform;
+  }
 :root{
     --transition6s: .6s cubic-bezier(0, 0.5, 0, 1) all;
     --transition3s: .3s cubic-bezier(0, 0.5, 0, 1) all;
@@ -286,7 +300,22 @@ nav{
             visibility:visible;
             display:block;
             transition: var(--transition6s);
-
+            h1 span{
+                // display:block;
+                // height:32px;
+                // width:32px;
+                // display:flex;
+                img{
+                    width:32px;
+                    height:32px;
+                    border-radius:4px;
+                    object-fit: cover;
+                }
+                img:nth-of-type(4), img:nth-of-type(6){
+                    border-radius:6px;
+                    box-shadow:0 2px 4px #80808030;
+                }
+            }
         }
     }
     .hidden{
