@@ -21,7 +21,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             <div className='cover_container'>
 
                 {covervid? 
-                    <video src={covervid}></video>
+                    <video playsInline autoPlay muted loop src={covervid}></video>
                 :
                 coverimg? <img src={coverimg} alt=""/> : '' }
 

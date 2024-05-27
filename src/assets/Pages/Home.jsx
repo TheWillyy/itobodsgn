@@ -88,14 +88,14 @@ function Home(){
 
         setMailCopied(true)
         setTimeout(mailcopytimeout, 2000)
-    };
-
-  return(
+    }
+    
+    return(
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="" srcset="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
-                {/* <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
+                <img src={pfp} alt="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
+                {/* <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -114,7 +114,7 @@ function Home(){
 
                 <div className='cta_container'>
                     <div className='cta_buttons'>
-                    <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
+                    <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
                         <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume'/>
                         <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin}/>
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble}/>
@@ -146,7 +146,7 @@ function Home(){
             <div className='writing'>
                 <section>
                     <p className='writing_title'>Professional Work History</p>
-                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Freelancing and Open to Work</a>
+                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Open to New Opportunities</a>
                     <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Product Designer &#x2192; TCI, UK</a>
                     <a style={{pointerEvents:"none"}}><span><p>2022 - 2023</p></span>Founding Product Designer &#x2192; SourceMyGadgets, NG</a>
                     <a style={{pointerEvents:"none"}}><span><p>2019</p></span>UI Designer &#x2192; Malon Global Tech, NG</a>
@@ -170,10 +170,8 @@ function Home(){
 
                 <StickyNote text="
                     <ul>
-                        <li>praise tha lord</li>
-                        <li>break da law</li>
-                        <li>take what's mine</li>
-                        <li>take some more </li>
+                        <li>pop out</li>
+                        <li>show nggas</li>
                     </ul>
                 "
             />
@@ -184,10 +182,10 @@ function Home(){
                             <h2>archived work.</h2>
                         </div>
                         <div className='dump_thumbnail_inner'>
-                            <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20374192/media/7b51317be6866d66ad55c7ebd710674e.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20331823/media/c337005f5e4e70a71d8306b31e81ea59.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/19763625/media/40cdff10bc97d46ac5209be7be032dba.gif" alt="" srcset="" />
+                            <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20374192/media/7b51317be6866d66ad55c7ebd710674e.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20331823/media/c337005f5e4e70a71d8306b31e81ea59.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/19763625/media/40cdff10bc97d46ac5209be7be032dba.gif" alt="" />
                         </div>
                     </div>
 
