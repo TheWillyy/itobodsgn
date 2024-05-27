@@ -1,37 +1,47 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
+import transition from '../../transitions.jsx'
+import styles from "../Styles/styles.scss"
 import Button from '../Components/Button.jsx'
 import WorkItem from '../Components/WorkItem.jsx'
 import NowPlaying from '../Components/NowPlaying.jsx'
 import Navbar from '../Components/Navbar.jsx'
-import styles from "../Styles/styles.scss"
 import Reading from '../Components/Reading.jsx'
+import StickyNote from '../Components/StickyNote.jsx'
 import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
-import transition from '../../transitions.jsx'
-import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import pfp from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
+import footervid from "../Media/Videos/0523 footer.mp4"
+import photoshop from "../Media/Images/Photoshop.png"
+import illustrator from "../Media/Images/Illustrator.png"
+import figma from "../Media/Images/Figma.png"
+import principle from "../Media/Images/PrincipleApp.png"
+import ae from "../Media/Images/Aftereffects.png"
+import rive from "../Media/Images/Rive.jpeg"
 
 
 
 //TODO
-//Fix weird zoom thing
-//Fix weird Font thing on mobile
-//fix case study NAv on mbile
-//fix case study entry scroll thing on mobile
-//fix weird space on dump
-//make nav persist on currnet url
-//weird lack of border radius on first workitem
-//progressive blur on workitem base
-//writing links should open in new tab
+//Fix weird zoom thing [FIXED]
+//fix case study NAv on mbile [Fixed]
+//fix weird space on dump [fixed]
+//writing links should open in new tab [done]
+//send a raven custom message to my mail [done]
+//weird lack of border radius on first workitem [done]
+//custom cursor for bottm [done]
+//change favicon [done]
+//progressive blur on workitem base [doneish -  we settled]
+//404 image [done]
+//footer video [done]
+//make nav persist on currnet url [done]`
+//section with sticky note [done]
+//fix case study entry scroll thing 
 //spotify for bottom link
-//custom cursor for bottm
-//send a raven custom message to my mail
-//footer video
-//404 image
-//change favicon
+//Fix weird Font thing on mobile 
+//edit bio
+
 
 function Home(){
     const [extendedBioVisible, setExtendedBioVisible] = useState(false);
@@ -39,6 +49,7 @@ function Home(){
     const [introresumeVisible, setIntroResumeVisible] = useState(false);
     const [introvidVisible, setIntrovidVisible] = useState(false);
     const [introVidPosition, setIntroVidPosition] = useState({ x: 0});
+    const [mailCopied, setMailCopied] = useState(false);
     
     useEffect(()=>{
 
@@ -62,21 +73,38 @@ function Home(){
         setTimeout(disappearReset, 2000);
     }
 
+    const mailcopytimeout = () => {
+        setMailCopied(false)
+    }
 
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText("williams.eitobo@gmail.com")
+        //   .then(() => {
+        //     alert('copied!');
+        //   })
+          .catch(err => {
+            console.error('Failed to copy text: ', err);
+          });
 
-  return(
+        setMailCopied(true)
+        setTimeout(mailcopytimeout, 2000)
+    }
+    
+    return(
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="" srcset="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
-                {/* <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
+                <img src={pfp} alt="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
+                {/* <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
                 <div className='bio_text_container'>
 
-                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product Designer based in Lagos, Nigeria.</h1>
+                    <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
-                        <h1><span>Designer by day, Artist in between, and Comedy Enthusiast by night. Despite my introverted personality, I have the ability to learn essential info from people by asking the right questions. Conveniently, I have seen it overlap in my role in human research as a product designer over the years. 
-                            I have employed my keen attention to detail and strive for excellence to work with brands and companies alike to match their product and customer needs, and over time, built trust in the practise of collaboration and clear communication </span></h1>
+                        <h1>For over 5 years, I have enjoyed crafting incredible visual experiences in UX and Graphic design
+                            with mainly (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) for design and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
+                            <br/>I'm always ever open to chat about design or collaborate on designing creative web and mobile experiences.
+                        </h1>
                     </div>
 
                     <h2 className='read_more custom-hover' onClick={()=>{
@@ -86,52 +114,44 @@ function Home(){
 
                 <div className='cta_container'>
                     <div className='cta_buttons'>
-                    <img src={resume} alt="" srcset="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
-                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='Download My Resume'/>
+                    <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
+                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume'/>
                         <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin}/>
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble}/>
                         <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers}/>
                     </div>
-                    <p>Updated Apr 1st 2024 </p>
+                    <p>Updated 1 Apr</p>
                 </div>
             </div>
 
-            <div className='work'>
+            <div className='work'>  
 
-                <WorkItem comingsoon coverimg='https://res.cloudinary.com/dhlkiskhn/image/upload/v1715874278/apiconf_cover.jpg'
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
+                        onClick={()=>{navigate("/casestudies/1")}} 
+                        titleSm='Indriver'
+                        titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
+                        type="Product / UX"
+                        year="2021"
+                />             
+
+                <WorkItem comingsoon 
                     type="Brand & UI Design"
                     year="2024"
                     titleLg="Coming Soon"
                     titleSm="API Conference Lagos"
                 />
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
-                    onClick={()=>{navigate("/casestudies/1")}} 
-                    titleSm='Indriver'
-                    titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
-                    type="Product / UX"
-                    year="2021"
-                />
-
-                <div className='dump_link custom-hover' onClick={()=>{navigate("/dump")}}>
-                    <div className='dump_thumbnail_outer'>
-                        <div className='title_lg'>
-                            <h2>archived work</h2>
-                        </div>
-                        <div className='dump_thumbnail_inner'>
-                            <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20374192/media/7b51317be6866d66ad55c7ebd710674e.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20331823/media/c337005f5e4e70a71d8306b31e81ea59.gif" alt="" srcset="" />
-                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/19763625/media/40cdff10bc97d46ac5209be7be032dba.gif" alt="" srcset="" />
-                        </div>
-                    </div>
-
-                    <h5>#dump</h5>
-                </div>
-
             </div>
 
             <div className='writing'>
+                <section>
+                    <p className='writing_title'>Professional Work History</p>
+                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Open to New Opportunities</a>
+                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Product Designer &#x2192; TCI, UK</a>
+                    <a style={{pointerEvents:"none"}}><span><p>2022 - 2023</p></span>Founding Product Designer &#x2192; SourceMyGadgets, NG</a>
+                    <a style={{pointerEvents:"none"}}><span><p>2019</p></span>UI Designer &#x2192; Malon Global Tech, NG</a>
+                </section>
+
                 <section>
                     <p className='writing_title'>Literature</p>
                     <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
@@ -146,6 +166,33 @@ function Home(){
                 </section>
             </div>
 
+            <div className='work2'>
+
+                <StickyNote text="
+                    <ul>
+                        <li>pop out</li>
+                        <li>show nggas</li>
+                    </ul>
+                "
+            />
+
+                <div className='dump_link custom-hover' onClick={()=>{navigate("/dump")}}>
+                    <div className='dump_thumbnail_outer'>
+                        <div className='title_lg'>
+                            <h2>archived work.</h2>
+                        </div>
+                        <div className='dump_thumbnail_inner'>
+                            <img src="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20374192/media/7b51317be6866d66ad55c7ebd710674e.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/20331823/media/c337005f5e4e70a71d8306b31e81ea59.gif" alt="" />
+                            <img src="https://cdn.dribbble.com/users/3236646/screenshots/19763625/media/40cdff10bc97d46ac5209be7be032dba.gif" alt="" />
+                        </div>
+                    </div>
+
+                    <h5>#dump</h5>
+                </div>
+            </div>
+
             <footer>
                 <div className='footer_info'>
                     <div className='activity'>
@@ -155,7 +202,9 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`} src=""
+                            playsInline muted autoPlay loop
+                            src={footervid}
+                            className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
                                 transform:`translateX(${
                                     // (introVidPosition.x < window.screen.width/2? -introVidPosition.x/4 : introVidPosition.x/4)
@@ -163,7 +212,7 @@ function Home(){
                                 }px)`
                             }}
                             ></video>
-                        <p>Designed and Developed by the Stellar Team (Me)</p>
+                        <p>{mailCopied? "Mail Copied!": "Designed and Developed by the Stellar Team (Me)"}</p>
                     </div>
 
                     <div className='links'>
@@ -177,14 +226,19 @@ function Home(){
                 </div>
 
                 <div className='email_lg' 
+                    onClick={()=>{
+                        copyToClipboard()
+                    }}
                     onMouseEnter={()=>{
                         setIntrovidVisible(true);
+                        // document.querySelectorAll(".credits_video")[0].play()
                     }}  
                     onMouseMove={()=>{
                         // changeVidPosition(this);
                     }}
                     onMouseLeave={()=>{
                         setIntrovidVisible(false);
+                        // document.querySelectorAll(".credits_video")[0].stop()
                     }}>
                         
                     <svg width="100%" height="100%" viewBox="0 0 1277 131" fill="none" xmlns="http://www.w3.org/2000/svg">

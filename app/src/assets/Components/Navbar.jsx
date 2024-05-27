@@ -46,6 +46,7 @@ useEffect(()=>{
   return (
 
     <>
+        <div className='prog_blur'></div>
         <nav className={scrollY > 32 ? 'nav_element_hover' : ''}  style={ currentlocation === "/" || "/dump" || "/casestudies/1" ? { } : {display:"none"} } >
             <div className='nav_title'>
                 <h5>Williams Eni</h5>
@@ -53,24 +54,24 @@ useEffect(()=>{
             </div>
 
             <div className='nav_tabs'>
-                <div className={pillPosition[position]}></div>
+                <div className={currentlocation == "/dump" ? pillPosition[1] : pillPosition[position]} style={ currentlocation == "/dump" || currentlocation == "" || currentlocation == "/" ? {opacity:"1"} : {opacity:"0"}}></div>
 
                 {/* automatically set position to whatever tab we're at */}
 
                 <Link className="custom-hover" onClick={()=>{setPosition(0)}} to="/" >Bio<span>1</span></Link>
 
-                <Link className="custom-hover" onClick={()=>{setPosition(1)}} to="/dump" >All Work<span>2</span></Link>
+                <Link className="custom-hover" onClick={()=>{setPosition(1)}} to="/dump" >Archive<span>2</span></Link>
 
                 {/* <Link className="custom-hover" onClick={()=>{setPosition(2)}} style={{pointerEvents:"none", opacity:"0.25"}} >Empty<span>98</span></Link> */}
 
                 <div className='divider_vertical_small'></div>
 
-                <a className="custom-hover" href="">Send a Raven<span>&#x2197;</span></a>
+                <a className="custom-hover" href="mailto:williams.eitobo@gmail.com?subject=Hello, Williams&body=Hi, Here's a Raven with a message. My name is">Send a Raven<span>&#x2197;</span></a>
             </div>
 
             <div className='status'>
                 <h5>{thLive}:{tmLive} Lagos, NG</h5>
-                <h5>Available</h5>
+                <h5>Open to Work</h5>
                 {/* probably sleeping */}
             </div>
         </nav>

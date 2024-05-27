@@ -21,7 +21,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             <div className='cover_container'>
 
                 {covervid? 
-                    <video src={covervid}></video>
+                    <video playsInline autoPlay muted loop src={covervid}></video>
                 :
                 coverimg? <img src={coverimg} alt=""/> : '' }
 
@@ -37,7 +37,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
 
         :
 
-        <div className='workitem_card custom-hover' onClick={onClick}>
+        <div className={comingsoon? 'workitem_card custom-hover comingsoon': 'workitem_card custom-hover'} onClick={onClick}>
             <div className='cover_container'>
 
                 <div className='title_lg' style={comingsoon? {filter: "blur(0px)", color:"#1F1F1F", opacity: "1", transform: "translateY(-16px)"}: {} }>
@@ -45,7 +45,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
                     {/* cut by ellipsis on height limit */}
                 </div>
 
-                {coverimg? <img style={comingsoon? {filter:"blur(24px)"} : {} } src={coverimg} alt="" /> : ''}
+                {coverimg? <img src={coverimg} alt="" /> : ''}
 
                 <div className='workitem_desc' style={comingsoon? {bottom:"calc(100% - 48px)", top:"0"}: {} }>
                     <div className='workitem_type'>{type || "Type"}</div>
