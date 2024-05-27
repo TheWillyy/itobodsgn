@@ -60,7 +60,7 @@ useEffect(()=>{
 
                 <Link className="custom-hover" onClick={()=>{setPosition(0)}} to="/" >Bio<span>1</span></Link>
 
-                <Link className="custom-hover" onClick={()=>{setPosition(1)}} to="/dump" >All Work<span>2</span></Link>
+                <Link className="custom-hover" onClick={()=>{setPosition(1)}} to="/dump" >Archive<span>2</span></Link>
 
                 {/* <Link className="custom-hover" onClick={()=>{setPosition(2)}} style={{pointerEvents:"none", opacity:"0.25"}} >Empty<span>98</span></Link> */}
 

@@ -124,7 +124,7 @@ function Home(){
                 </div>
             </div>
 
-            <div className='work'>
+            <div className='work'>  
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
                         onClick={()=>{navigate("/casestudies/1")}} 

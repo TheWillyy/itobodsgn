@@ -4,7 +4,7 @@ import WorkItem from '../Components/WorkItem.jsx'
 
 
 function StickyNote({text=""}){
-    const [randomDeg, setRandomDeg] = useState(0)
+    const [randomDeg, setRandomDeg] = useState(-5)
   return(
     <>
         <div className='stickynote' 

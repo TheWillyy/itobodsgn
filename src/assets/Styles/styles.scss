@@ -502,7 +502,7 @@ nav{
     margin-left:auto;
     border-radius:32px;
     display:flex;
-    transform: rotate(-5deg);
+    transform: rotate(0deg);
     box-shadow: 0 2px 8px #80808010,
     0 12px 24px #80808010;
     div{
@@ -935,10 +935,10 @@ footer{
     }
 }
 
-@media screen and (max-width: 425px){
+@media (max-width: 425px){
     nav{
         // flex-direction:row-reverse;
-        width: calc(100vw - 32px);
+        width: 100vw;
         // margin:0;
         .nav_title{
             display:none;
@@ -952,13 +952,13 @@ footer{
         }
     }
     .nav_element_hover{
-        width: calc(100vw - 16px);
+        width: 90vw;
         padding: 0;
     }
-    .intro, .work, .writing, footer{
+    .intro, .work, .work2, .writing, footer{
         // background:Red;
-        padding:0 16px;
-        width:100vw;
+        padding:0 24px;
+        width:100%;
         padding-top: 64px;
         padding-bottom: 64px;
     }
@@ -990,6 +990,9 @@ footer{
     }
     .work, .work2{
         grid-row-gap: 32px;
+        .stickynote, .dump_card{
+            margin: 0;
+        }
     }
     .dump{
         padding: 156px 16px 128px 16px;
@@ -1035,12 +1038,12 @@ footer{
         overflow: visible !important;
         position:absolute;
         left:0;
-        width: calc(100vw + 32px) !important;
+        width: calc(100vw + 48px) !important;
         padding-top:8px;
     }
 
     .casestudy{
-        padding: 128px 16px 128px 16px;
+        padding: 128px 24px 128px 24px;
         gap:32px;
         .casestudy_info_metadata{
             flex-direction:column;
@@ -1089,6 +1092,7 @@ footer{
         }
         .casestudy_subheader{
             width:100%;
+            line-height:150%;
         }
         .back-to-top{
             flex-direction:column;
@@ -1150,9 +1154,100 @@ footer{
 
 }
 
-@media screen and (max-width: 1000px) and (min-width:768px){
-    *{
-        display:none;
+@media (min-width: 426px) and (max-width: 1000px) {
+    nav{
+        // flex-direction:row-reverse;
+        width: calc(100vw - 32px);
+        // margin:0;
+        .nav_title{
+            display:none;
+        }
+        .status{
+            display:none;
+        }
+        .nav_tabs{
+            width:100%;
+            box-shadow: none;
+        }
+    }
+    .nav_element_hover{
+        width: calc(100vw - 16px);
+        padding: 0;
+    }
+    .intro{
+        padding-top: 128px !important;
+        padding-bottom: 0px;
+    }
+    .intro, .work, .work2, .writing, footer{
+        // background:Red;
+        padding:0 5vw;
+        width:100%;
+        padding-top: 64px;
+        padding-bottom: 64px;
+    }
+    .work, .work2{
+        // gap: 32px;
+    }
+    .stickynote, .dump_link{
+        margin: 0 !important;
+    }
+    .footer_info{
+        padding:0 !important;
+    }
+    .footer_info{
+        gap:64px;
+        flex-direction:column !important;
+        align-items:flex-start !important;
+        padding:0 !important;
+    }
+    .credits{
+        display:none !important;
+    }
+    footer{
+        // padding-bottom:0 !important;
+    }
+    .email_lg{
+        overflow: visible !important;
+        position:absolute;
+        left:0;
+        width: 110vw!important;
+        padding-top:8px;
+    }
+    .dump_items{
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .dump_card {
+        max-width:100% !important;
+        .cover_container {
+            height: auto;
+        }
+    }
+    .casestudy{
+        section{
+            width:100%;
+        }
+        .casestudy_billboardtext, .casestudy_subheader{
+            width:100%;
+        }
+        .iconbtn{
+            position: relative;
+            align-self:flex-start;
+            margin:-8px;
+            display: none;
+        }
+        .casestudy_info_metadata{
+            // flex-direction:column;
+            gap:32px;
+            align-items: flex-end;
+        }
+    }
+    .back-to-top{
+        flex-direction:column;
+        gap:32px;
+        h1{
+            max-width:none;
+            width:100%;
+        }
     }
 }
 
