@@ -1,7 +1,7 @@
 .workitem_card{
     display:flex;
     flex-direction:column;
-    flex:480px; //resize width property
+    flex:400px; //resize width property
     gap:16px;
     position:relative;
     transition: .6s cubic-bezier(0, 0.5, 0, 1) all;
@@ -10,7 +10,7 @@
         position:relative;
         border-radius:32px;
         background-color:#F1F1F1;
-        height:480px;
+        height:400px;
         overflow:hidden;
         transition: .6s cubic-bezier(0, 0.5, 0, 1) all;
         .title_lg{

@@ -387,19 +387,25 @@ nav{
 .work, .work2{
     padding: 64px 10vw;
     width:calc(100vw - 20vw);
-    display: flex;
-    flex-direction:row;
+    // display: flex;
+    // flex-direction:row;
     // justify-content: center; //only use this for smaller screen sizes
     flex-wrap: wrap;
-    grid-template-columns: auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     grid-column-gap: 32px;
     grid-row-gap: 64px;
     align-items: center;
-
-    // .workitem_card:nth-last-child(2){
-    //     max-width:640px
-    // }
-
+}
+.work2{
+    padding: 64px 10vw;
+    width:80vw;
+    display: flex;
+    flex-direction:row;
+    justify-content: center; //only use this for smaller screen sizes
+    flex-wrap: wrap;
+    gap:128px;
+    justify-content: center;
     .dump_link{
         display:flex;
         flex-direction:column;
@@ -408,7 +414,7 @@ nav{
         min-height:320px;
         transition:var(--transition6s);
         // cursor:pointer;
-        margin-right:auto;
+        // margin-right:auto;
         color:#B2B2B2;
 
         .dump_thumbnail_outer {
@@ -490,16 +496,12 @@ nav{
     }
 }
 
-.work2{
-    gap:128px;
-    justify-content: center;
-}
 .stickynote{
     background:#FFD89E;
     transition:var(--transition6s);
     min-height:320px;
     width:320px;
-    margin-left:auto;
+    // margin-left:auto;
     border-radius:32px;
     display:flex;
     transform: rotate(0deg);
@@ -965,11 +967,12 @@ footer{
     .intro{
         padding-top: 128px;
         padding-bottom: 0px;
-    }
-    .bio_text_container{
-        gap:4px;
-        .extended_bio_text_container{
-            margin:0 !important;
+        .bio_text_container{
+            gap:4px;
+            .extended_bio_text_container{
+                margin:0 !important;
+                max-height:80vh;
+            }
         }
     }
     .cta_container{
@@ -989,7 +992,8 @@ footer{
         display:none;
     }
     .work, .work2{
-        grid-row-gap: 32px;
+        // grid-row-gap: 32px;
+        grid-template-columns: 1fr;
         .stickynote, .dump_card{
             margin: 0;
         }
@@ -1177,6 +1181,13 @@ footer{
     .intro{
         padding-top: 128px !important;
         padding-bottom: 0px;
+            .bio_text_container{
+                gap:4px;
+                .extended_bio_text_container{
+                    margin:0 !important;
+                    max-height:90vh;
+                }
+            }
     }
     .intro, .work, .work2, .writing, footer{
         // background:Red;
