@@ -1154,7 +1154,7 @@ footer{
 
 }
 
-@media (min-width: 426px) and (max-width: 1000px) {
+@media (min-width: 426px) and (max-width: 768px) {
     nav{
         // flex-direction:row-reverse;
         width: calc(100vw - 32px);
