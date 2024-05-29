@@ -417,6 +417,10 @@ nav{
         // margin-right:auto;
         color:#B2B2B2;
 
+        .title_sm{
+            font-size:18px;
+        }
+
         .dump_thumbnail_outer {
             background:#F5F5F5;
             min-height: calc(320px - 48px);
@@ -556,7 +560,7 @@ nav{
                 color:#B3B3B3;
                 transition: var(--transition3s);
             }
-            span p{
+            span{
                 font-size:18px;
                 color:#b3b3b3;
             }
@@ -566,6 +570,21 @@ nav{
     .writing_title{
         font-size:18px;
         color:#b3b3b3;
+    }
+    .work_history{
+        p{
+            display:flex;
+            gap:16px;
+            text-decoration:none;
+            color:#1f1f1f;
+            align-items:center;
+            font-size:18px;
+            transition: var(--transition3s);
+            span{
+                font-size:18px;
+                color:#b3b3b3;
+            }
+        }
     }
 }
 

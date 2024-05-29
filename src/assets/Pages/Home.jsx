@@ -94,8 +94,7 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
-                {/* <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
+                <img src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -114,11 +113,11 @@ function Home(){
 
                 <div className='cta_container'>
                     <div className='cta_buttons'>
-                    <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
-                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume'/>
-                        <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin}/>
-                        <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble}/>
-                        <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers}/>
+                    <img src={resume} alt="a screenshot of williams' resume" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"} />
+                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume' alt="download resume" name="download" />
+                        <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin} alt="linkedin button" name="linkedin" />
+                        <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble} alt="dribbble button" name="dribbble" />
+                        <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers} alt="layers button" name="layers" />
                     </div>
                     <p>Updated 1 Apr</p>
                 </div>
@@ -144,19 +143,19 @@ function Home(){
             </div>
 
             <div className='writing'>
-                <section>
+                <section className='work_history'>
                     <p className='writing_title'>Professional Work History</p>
-                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Open to New Opportunities</a>
-                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Product Designer &#x2192; TCI, UK</a>
-                    <a style={{pointerEvents:"none"}}><span><p>2022 - 2023</p></span>Founding Product Designer &#x2192; SourceMyGadgets, NG</a>
-                    <a style={{pointerEvents:"none"}}><span><p>2019</p></span>UI Designer &#x2192; Malon Global Tech, NG</a>
+                    <p><span>Now</span>Open to New Opportunities</p>
+                    <p><span>Now</span>Product Designer &#x2192; TCI, UK</p>
+                    <p><span>2022 - 2023</span>Founding Product Designer &#x2192; SourceMyGadgets, NG</p>
+                    <p><span>2019</span>UI Designer &#x2192; Malon Global Tech, NG</p>
                 </section>
 
                 <section>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span><p>2020</p></span>Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>Imagining Immersive Design</a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>Deconstructing Constraints in Figma</a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>Prototyping with Figma</a>
                 </section>
                 
                 <section>
@@ -189,7 +188,7 @@ function Home(){
                         </div>
                     </div>
 
-                    <h5>#dump</h5>
+                    <p className='title_sm'>#dump</p>
                 </div>
             </div>
 

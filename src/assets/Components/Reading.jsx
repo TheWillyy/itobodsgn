@@ -7,8 +7,8 @@ function Reading ({book_title}) {
     <>
         {
             book_title?
-            <p><span><p>Reading</p></span>The Design of Everyday Things</p> :
-            <p><span><p>Doomscrolling</p></span>Tiktok</p>
+            <p><span>Reading</span>The Design of Everyday Things</p> :
+            <p><span>Doomscrolling</span>Tiktok</p>
         }
     </>
   )

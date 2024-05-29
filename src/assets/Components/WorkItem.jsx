@@ -30,7 +30,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             </div>
             
             <div className='title_sm'>
-                <h5>{titleSm}</h5>
+                <p>{titleSm}</p>
             </div>
         </div>
     )
@@ -55,7 +55,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             </div>
 
             <div className='title_sm'>
-                <h5>{titleSm || "Title"}</h5>
+                <p>{titleSm || "Title"}</p>
             </div>
         </div>
     }

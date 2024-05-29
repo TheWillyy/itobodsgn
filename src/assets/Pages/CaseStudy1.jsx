@@ -42,7 +42,7 @@ function CaseStudy1(){
     <>
     <div className='casestudy'>
 
-      <Button iconsrc={backicon} customstyle={{
+      <Button iconsrc={backicon} name="back" alt="back icon" customstyle={{
             backgroundColor:'white',
             position: 'absolute',
             left: 'calc( 5vw - 16px )',
@@ -219,7 +219,7 @@ function CaseStudy1(){
         <div className='back-to-top'>
           <h1>Read Next: <br/><span><a href="">A Usability Evaluation of a Mobile Wallet Onboarding Process</a></span></h1>
           {/* can we automate the titles? */}
-          <Button text="Back to Top"
+          <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}
           />
         </div>
