@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from "../Styles/workitem.scss"
 
-function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type="", year="", covervid="", titleSm, titleLg, onClick}) {
+function WorkItem({dump, alt, comingsoon, iframelink, dumpLink="", coverimg="", type="", year="", covervid="", titleSm, titleLg, onClick}) {
 
   return (
     <>
@@ -21,9 +21,9 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             <div className='cover_container'>
 
                 {covervid? 
-                    <video playsInline autoPlay muted loop src={covervid}></video>
+                    <video loading="lazy" playsInline autoPlay muted loop src={covervid}></video>
                 :
-                coverimg? <img src={coverimg} alt=""/> : '' }
+                coverimg? <img loading="lazy" src={coverimg} alt={alt}/> : '' }
 
                     <a href={dumpLink}>Source &#x2197;</a>
 
@@ -45,7 +45,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
                     {/* cut by ellipsis on height limit */}
                 </div>
 
-                {coverimg? <img src={coverimg} alt="" /> : ''}
+                {coverimg? <img src={coverimg} alt={alt} loading='lazy' /> : ''}
 
                 <div className='workitem_desc' style={comingsoon? {bottom:"calc(100% - 48px)", top:"0"}: {} }>
                     <div className='workitem_type'>{type || "Type"}</div>

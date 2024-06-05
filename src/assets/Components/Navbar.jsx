@@ -29,7 +29,7 @@ useEffect(()=>{
         const currentTime = timeGetter();
         setThLive(formatTime(currentTime.getHours()))
         setTmLive(formatTime(currentTime.getMinutes()));
-    }, 1000); //clock
+    }, 10000); //clock
 
     const handleScroll = ()=>{
         setScrollY(window.scrollY);

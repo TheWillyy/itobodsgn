@@ -10,10 +10,33 @@ import SmoothScroll from '../../SmoothScroll.component.jsx'
 function Dump(){
   return(
     <>
-    <SmoothScroll>
+    {/* <SmoothScroll> */}
       <div className='dump'>
           <div className='casestudy_info'>
-              <h1 className='dump_title'>Shots from ongoing projects, experiments, and archived work come to live here.</h1>
+              <h1 className='dump_title'>Unfinished work 📂, personal experiments 🧪, collaboration 🫶🏾 and archives 🗑️ live here.</h1>
+          </div>
+
+          {/* <div className='dump_items dump_test'>
+            <WorkItem />
+            <WorkItem />
+            <WorkItem dump/>
+            <WorkItem />
+            <WorkItem dump/>
+            <WorkItem dump/>
+            <WorkItem />
+          </div> */}
+
+          <div className='dump_items'>
+            <WorkItem coverimg=""
+              titleLg=""
+              titleSm="Bookateria"
+              type="Product/UI Design"
+              year="2021"
+            />
+
+            <WorkItem 
+            
+            />
           </div>
 
           <div className='dump_items'>
@@ -24,22 +47,14 @@ function Dump(){
             <WorkItem dump covervid="https://cdn.dribbble.com/userupload/11576658/file/original-60caa92fe850eeda5436d3b1164f8536.mp4" />
             <WorkItem dump covervid="https://cdn.dribbble.com/userupload/11508948/file/original-25d71da8202341c3e4cf8e1fb8cd0697.mp4" />
             <WorkItem dump covervid="https://cdn.dribbble.com/userupload/11914294/file/original-6dc76a97d18da52b6a9646ffb120116c.mp4" />
-            <WorkItem dump iframelink="https://twitter.com/i/status/1785754210874937418"/>
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
-            <WorkItem dump />
+            <WorkItem dump covervid="https://res.cloudinary.com/dhlkiskhn/video/upload/v1717547823/Kunstraum_2.mp4" />
+            {/* <WorkItem dump covervid="https://i.vimeocdn.com/video/1390781534-c5fd7b878aa9b5d6eb6e63607d4d0d21b8a92349882363c23dcc95498a440cd9-d?mw=3700&mh=2255&q=70"/> */}
+            {/* <WorkItem dump covervid="https://vimeo.com/686404026"/> */}
           </div>
 
           <p className='casestudy_thankyou'>Thank you for viewing!</p>
       </div>
-    </SmoothScroll>
+    {/* </SmoothScroll> */}
     {/* //footer */}
 
     </>

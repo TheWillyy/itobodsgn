@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
 import Button from '../Components/Button.jsx'
 import styles from "../Styles/styles.scss"
-import Reading from '../Components/Reading.jsx'
 import CaseStudyInfo from '../Components/CaseStudy/CaseStudyInfo.jsx'
 import ImgLarge from '../Components/CaseStudy/ImgLarge.jsx'
 import BodyText from '../Components/CaseStudy/BodyText.jsx'

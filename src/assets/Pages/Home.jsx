@@ -101,7 +101,7 @@ function Home(){
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
                         <h1>For over 5 years, I have enjoyed crafting incredible visual experiences in UX and Graphic design
-                            with mainly (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) for design and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
+                            with tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
                             <br/>I'm always ever open to chat about design or collaborate on designing creative web and mobile experiences.
                         </h1>
                     </div>
