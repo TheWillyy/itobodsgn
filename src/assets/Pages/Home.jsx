@@ -90,6 +90,14 @@ function Home(){
         setTimeout(mailcopytimeout, 2000)
     }
     
+    const scrollToTopIntro = () => {
+        setExtendedBioVisible(false)
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+    }
+
     return(
     <>
         <div className='homepage'>
@@ -107,7 +115,7 @@ function Home(){
                     </div>
 
                     <h2 className='read_more custom-hover' onClick={()=>{
-                        extendedBioVisible? setExtendedBioVisible(false) : setExtendedBioVisible(true);
+                        extendedBioVisible? scrollToTopIntro() : setExtendedBioVisible(true);
                     }}>{extendedBioVisible? 'Read Less':'Read More'}</h2>
                 </div>
 
