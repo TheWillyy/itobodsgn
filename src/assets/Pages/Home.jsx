@@ -94,15 +94,15 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
+                <img src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'/>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
-                        <h1>For over 5 years, I have enjoyed crafting incredible visual experiences in UX and Graphic design
-                            with tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
-                            <br/>I'm always ever open to chat about design or collaborate on designing creative web and mobile experiences.
+                        <h1>For over 5 years, I have gained pleasure from crafting incredible visual experiences in Product/UX and Graphic design
+                            with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
+                            <br/>I'm open to chat about design, or collaborate to design creative web and mobile experiences. (feel free, hmu!😉)
                         </h1>
                     </div>
 
@@ -123,22 +123,37 @@ function Home(){
                 </div>
             </div>
 
-            <div className='work'>  
+            <div className='work'>     
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673388/My%20Portfolio/0xhunt.png"
+                    onClick={()=>{window.open("https://0xHuntBot.xyz", "_blank")}} 
+                    titleSm='0xHuntBot'
+                    titleLg='Marketing Website for an on-chain analysis tool'
+                    type="Web UI & Motion Design"
+                    year="2023"
+                />      
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
-                        onClick={()=>{navigate("/casestudies/1")}} 
-                        titleSm='Indriver'
-                        titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
-                        type="Product / UX"
-                        year="2021"
+                    onClick={()=>{navigate("/casestudies/InDriver")}} 
+                    titleSm='Indriver (No Affiliation)'
+                    titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
+                    type="Product Design"
+                    year="2021"
                 />             
 
                 <WorkItem comingsoon 
                     type="Brand & UI Design"
                     year="2024"
-                    titleLg="Coming Soon"
                     titleSm="API Conference Lagos"
                 />
+
+                <WorkItem comingsoon coverimg="" 
+                    onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
+                    titleSm='itobo.xyz (shameless plug, duh)'
+                    titleLg='Portfolio Website for a Designer'
+                    type="UI/Motion Design & Dev"
+                    year="2024"
+                />  
 
             </div>
 
@@ -153,9 +168,9 @@ function Home(){
 
                 <section>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design</a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma</a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma</a>
                 </section>
                 
                 <section>
@@ -169,8 +184,10 @@ function Home(){
 
                 <StickyNote text="
                     <ul>
-                        <li>pop out</li>
-                        <li>show nggas</li>
+                        <li>Completing a Passion Product</li>
+                        <li>Experimenting for tech event</li>
+                        <li>Collaborating for a Finance Solution</li>
+                        <li>Doomscrolling</li>
                     </ul>
                 "
             />

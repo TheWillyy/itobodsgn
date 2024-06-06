@@ -7,6 +7,19 @@ html{
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     //should not repeat
+    &::before{
+        content:'';
+        position:fixed;
+        z-index:998;
+        top:0;
+        width:100%;
+        height:64px;
+        background:linear-gradient(
+            to top,
+            #FFFFFF00,
+            #FFFFFF
+        );
+    }
 }
 @font-face {
     font-family: 'Neue Montreal';
@@ -511,6 +524,7 @@ nav{
     transform: rotate(0deg);
     box-shadow: 0 2px 8px #80808010,
     0 12px 24px #80808010;
+    user-select: none;
     div{
         background-color:#FFE2A8;
         height:304px;
@@ -776,7 +790,6 @@ footer{
     height:60vh;
 }
 
-
 .casestudy_imgsmall{
     width:100%;
     display:flex;
@@ -874,10 +887,10 @@ footer{
     // overflow: hidden;
     // display: block;
 
-    &>div{
+    // &>div{
         // margin-bottom:32px;
         // flex:320px;
-    }
+    // }
     // .workitem_card{
     //     max-width: 400px;
     // }
@@ -1025,14 +1038,22 @@ footer{
         padding-bottom: 64px;
     }
     .intro{
-        padding-top: 50vh;
+        padding-top: 30vh;
         padding-bottom: 0px;
         .bio_text_container{
             gap:4px;
             .extended_bio_text_container{
                 margin:0 !important;
-                max-height:80vh;
+                max-height: 150vh;
             }
+        }
+        .intro_name{
+            pointer-events: none;
+        }
+        .pfp{
+            display:block;
+            opacity:1;
+            position:static;
         }
     }
     .cta_container{
@@ -1079,9 +1100,9 @@ footer{
         }
     }
     .writing{
-        .writing_title{
+        // .writing_title{
 
-        }
+        // }
         a{
             align-items: flex-start !important;
         }
@@ -1107,9 +1128,9 @@ footer{
     .credits{
         display:none !important;
     }
-    footer{
-        // padding-bottom:0 !important;
-    }
+    // footer{
+    //     // padding-bottom:0 !important;
+    // }
     .email_lg{
         overflow: visible !important;
         position:absolute;
@@ -1268,9 +1289,9 @@ footer{
         padding-top: 64px;
         padding-bottom: 64px;
     }
-    .work, .work2{
-        // gap: 32px;
-    }
+    // .work, .work2{
+    //     // gap: 32px;
+    // }
     .stickynote, .dump_link{
         margin: 0 !important;
     }
@@ -1286,9 +1307,9 @@ footer{
     .credits{
         display:none !important;
     }
-    footer{
-        // padding-bottom:0 !important;
-    }
+    // footer{
+    //     // padding-bottom:0 !important;
+    // }
     .email_lg{
         overflow: visible !important;
         position:absolute;

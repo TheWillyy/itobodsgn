@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link, useNavigate } from "react-router-dom"
 import Button from '../Components/Button.jsx'
 import styles from "../Styles/styles.scss"
 import Reading from '../Components/Reading.jsx'
@@ -8,12 +9,15 @@ import dumpcoverimg from "../Media/Images/imgplaceholder.png"
 import SmoothScroll from '../../SmoothScroll.component.jsx'
 
 function Dump(){
+
+  const navigate = useNavigate()
+
   return(
     <>
     {/* <SmoothScroll> */}
       <div className='dump'>
           <div className='casestudy_info'>
-              <h1 className='dump_title'>Unfinished work 📂, personal experiments 🧪, collaboration 🫶🏾 and archives 🗑️ live here.</h1>
+              <h1 className='dump_title'>Personal experiments 🧪, unfinished work 📂, collaboration projects 🫶🏾 and archives 🗑️ live here.</h1>
           </div>
 
           {/* <div className='dump_items dump_test'>
@@ -27,16 +31,23 @@ function Dump(){
           </div> */}
 
           <div className='dump_items'>
-            <WorkItem coverimg=""
-              titleLg=""
+
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
+              titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
               type="Product/UI Design"
               year="2021"
+              onClick={()=>{navigate("/casestudies/Bookateria")}} 
             />
 
-            <WorkItem 
-            
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
+              titleLg="Crafting a palatable learning platform for cooking beginners"
+              titleSm="Spiced Up!"
+              type="Product/UI Design"
+              year="2020"
+              onClick={()=>{navigate("/casestudies/SpicedUp")}} 
             />
+
           </div>
 
           <div className='dump_items'>
@@ -48,6 +59,7 @@ function Dump(){
             <WorkItem dump covervid="https://cdn.dribbble.com/userupload/11508948/file/original-25d71da8202341c3e4cf8e1fb8cd0697.mp4" />
             <WorkItem dump covervid="https://cdn.dribbble.com/userupload/11914294/file/original-6dc76a97d18da52b6a9646ffb120116c.mp4" />
             <WorkItem dump covervid="https://res.cloudinary.com/dhlkiskhn/video/upload/v1717547823/Kunstraum_2.mp4" />
+            <WorkItem dump coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673453/dash.png" />
             {/* <WorkItem dump covervid="https://i.vimeocdn.com/video/1390781534-c5fd7b878aa9b5d6eb6e63607d4d0d21b8a92349882363c23dcc95498a440cd9-d?mw=3700&mh=2255&q=70"/> */}
             {/* <WorkItem dump covervid="https://vimeo.com/686404026"/> */}
           </div>

@@ -1,12 +1,12 @@
 import { useEffect, useRef, useState } from 'react'
-import Button from '../Components/Button.jsx'
-import styles from "../Styles/styles.scss"
-import Reading from '../Components/Reading.jsx'
-import CaseStudyInfo from '../Components/CaseStudy/CaseStudyInfo.jsx'
-import ImgLarge from '../Components/CaseStudy/ImgLarge.jsx'
-import BodyText from '../Components/CaseStudy/BodyText.jsx'
-import ImgSmall from '../Components/CaseStudy/ImgSmall.jsx'
-import BillboardText from '../Components/CaseStudy/BillboardText.jsx'
+import Button from '../../Components/Button.jsx'
+import styles from "../../Styles/styles.scss"
+import Reading from '../../Components/Reading.jsx'
+import CaseStudyInfo from '../../Components/CaseStudy/CaseStudyInfo.jsx'
+import ImgLarge from '../../Components/CaseStudy/ImgLarge.jsx'
+import BodyText from '../../Components/CaseStudy/BodyText.jsx'
+import ImgSmall from '../../Components/CaseStudy/ImgSmall.jsx'
+import BillboardText from '../../Components/CaseStudy/BillboardText.jsx'
 
 function CaseStudy(){
     //will have ID

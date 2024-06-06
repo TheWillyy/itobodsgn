@@ -25,7 +25,7 @@ function WorkItem({dump, alt, comingsoon, iframelink, dumpLink="", coverimg="", 
                 :
                 coverimg? <img loading="lazy" src={coverimg} alt={alt}/> : '' }
 
-                    <a href={dumpLink}>Source &#x2197;</a>
+                    {dumpLink !='' ? <a href={dumpLink}>Source &#x2197;</a> : ''}
 
             </div>
             
@@ -41,7 +41,7 @@ function WorkItem({dump, alt, comingsoon, iframelink, dumpLink="", coverimg="", 
             <div className='cover_container'>
 
                 <div className='title_lg' style={comingsoon? {filter: "blur(0px)", color:"#1F1F1F", opacity: "1", transform: "translateY(-16px)"}: {} }>
-                    <h2>{titleLg || "Longer Title"}</h2>
+                    <h2>{comingsoon? "Coming Soon" : titleLg || "Longer Title"}</h2>
                     {/* cut by ellipsis on height limit */}
                 </div>
 

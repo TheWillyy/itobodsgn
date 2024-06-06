@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
-import Button from '../Components/Button.jsx'
-import styles from "../Styles/styles.scss"
-import CaseStudyInfo from '../Components/CaseStudy/CaseStudyInfo.jsx'
-import ImgLarge from '../Components/CaseStudy/ImgLarge.jsx'
-import BodyText from '../Components/CaseStudy/BodyText.jsx'
-import ImgSmall from '../Components/CaseStudy/ImgSmall.jsx'
-import BillboardText from '../Components/CaseStudy/BillboardText.jsx'
-import transition from '../../transitions.jsx'
-import backicon from '..//Media/Icons/back-icon.svg'
-import Subheader from '../Components/CaseStudy/Subheader.jsx'
+import Button from '../../Components/Button.jsx'
+import styles from "../../Styles/styles.scss"
+import CaseStudyInfo from '../../Components/CaseStudy/CaseStudyInfo.jsx'
+import ImgLarge from '../../Components/CaseStudy/ImgLarge.jsx'
+import BodyText from '../../Components/CaseStudy/BodyText.jsx'
+import ImgSmall from '../../Components/CaseStudy/ImgSmall.jsx'
+import BillboardText from '../../Components/CaseStudy/BillboardText.jsx'
+import transition from '../../../transitions.jsx'
+import backicon from '../../Media/Icons/back-icon.svg'
+import Subheader from '../../Components/CaseStudy/Subheader.jsx'
 
-function CaseStudy1(){
+function InDriver(){
   const [scrollY, setScrollY] = useState(0);
 
   const handleScroll = () => {
@@ -51,7 +51,7 @@ function CaseStudy1(){
           />
 
         <CaseStudyInfo props={{
-            year:'2024',
+            year:'2021',
             role:'Product Designer',
             type:"UX/Product Design",
             duration:"3 Weeks",
@@ -216,7 +216,7 @@ function CaseStudy1(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="">A Usability Evaluation of a Mobile Wallet Onboarding Process</a></span></h1>
+          <h1>Read Next: <br/><span><a href="">Making it easier to find and share study material</a></span></h1>
           {/* can we automate the titles? */}
           <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}
@@ -231,4 +231,4 @@ function CaseStudy1(){
   )
 }
 
-export default transition(CaseStudy1);
+export default transition(InDriver);
