@@ -110,7 +110,7 @@ function Home(){
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
                         <h1>For over 5 years, I have gained pleasure from crafting incredible visual experiences in Product/UX and Graphic design
                             with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
-                            <br/>I'm open to chat about design, or collaborate to design creative web and mobile experiences. (feel free, hmu!😉)
+                            <br/>I'm open to Product Design Roles and Collaborations on creative web and mobile experiences. (or even a chat. feel free, hmu 😉)
                         </h1>
                     </div>
 
