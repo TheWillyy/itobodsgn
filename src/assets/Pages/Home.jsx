@@ -134,8 +134,8 @@ function Home(){
                     titleSm="API Conference Lagos"
                 />
 
-                <WorkItem comingsoon coverimg="" 
-                    onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
+                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766694/My%20Portfolio/a1fc2c83-7609-4dea-bf51-b031160f31dd.png" 
+                    // onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
                     titleSm='itobo.xyz (shameless plug, duh)'
                     titleLg='Portfolio Website for a Designer'
                     type="UI/Motion Design & Dev"
