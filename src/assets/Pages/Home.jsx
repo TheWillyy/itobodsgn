@@ -153,7 +153,7 @@ function Home(){
                     <p><span>2019</span>UI Designer &#x2192; Malon Global Tech, NG</p>
                 </section>
 
-                <section>
+                <section className='literature'>
                     <p className='writing_title'>Literature</p>
                     <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design</a>
                     <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma</a>
@@ -170,8 +170,8 @@ function Home(){
             <div className='work2'>
 
                 <StickyNote text="
-                    Todo:
                     <ul>
+                    <li><b>Todo:</b></li>
                         <li>Complete Passion Projects</li>
                         <li>Experiment for tech event</li>
                         <li>Doomscrolling</li>

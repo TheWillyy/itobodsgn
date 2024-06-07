@@ -1111,8 +1111,13 @@ footer{
         // .writing_title{
 
         // }
+        
         a{
             align-items: flex-start !important;
+        }
+        .literature a{
+            flex-direction: row-reverse;
+            justify-content: space-between;
         }
         .work_history{
             p{
