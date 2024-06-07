@@ -22,27 +22,6 @@ import ae from "../Media/Images/Aftereffects.png"
 import rive from "../Media/Images/Rive.jpeg"
 
 
-
-//TODO
-//Fix weird zoom thing [FIXED]
-//fix case study NAv on mbile [Fixed]
-//fix weird space on dump [fixed]
-//writing links should open in new tab [done]
-//send a raven custom message to my mail [done]
-//weird lack of border radius on first workitem [done]
-//custom cursor for bottm [done]
-//change favicon [done]
-//progressive blur on workitem base [doneish -  we settled]
-//404 image [done]
-//footer video [done]
-//make nav persist on currnet url [done]`
-//section with sticky note [done]
-//fix case study entry scroll thing 
-//spotify for bottom link
-//Fix weird Font thing on mobile 
-//edit bio
-
-
 function Home(){
     const [extendedBioVisible, setExtendedBioVisible] = useState(false);
     const [intropfpVisible, setIntropfpVisible] = useState(false);
@@ -134,7 +113,7 @@ function Home(){
             <div className='work'>     
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673388/My%20Portfolio/0xhunt.png"
-                    onClick={()=>{window.open("https://0xHuntBot.xyz", "_blank")}} 
+                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
                     titleSm='0xHuntBot'
                     titleLg='Marketing Website for an on-chain analysis tool'
                     type="Web UI & Motion Design"
@@ -149,7 +128,7 @@ function Home(){
                     year="2021"
                 />             
 
-                <WorkItem comingsoon 
+                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
                     type="Brand & UI Design"
                     year="2024"
                     titleSm="API Conference Lagos"

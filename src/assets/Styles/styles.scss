@@ -764,6 +764,14 @@ footer{
     font-size: 40px;
     text-align: left;
 }
+.casestudy_billboardtext_link{
+    color:#B2B2B2;
+    transition: var(--transition3s);
+    &:hover{
+        color:#1F1F1F;
+        transition: var(--transition3s);
+    }
+}
 .casestudy_subheader{
     width:700px;
     // line-height: 120%;
