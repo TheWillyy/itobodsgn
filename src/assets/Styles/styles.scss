@@ -554,14 +554,14 @@ nav{
 .writing{
     display:flex;
     flex-direction:column;
-    gap:32px;
+    gap:64px;
     padding: 64px 10vw;
     transition: var(--transition3s);
     section{
         display:flex;
         flex-direction:column;
         gap:16px;
-        width: fit-content;
+        width: 100%;
         a{
             display:flex;
             gap:16px;
@@ -1111,13 +1111,17 @@ footer{
         // .writing_title{
 
         // }
+        gap:64px;
         
         a{
             align-items: flex-start !important;
         }
-        .literature a{
-            flex-direction: row-reverse;
-            justify-content: space-between;
+        .literature{
+            width:100%;
+            a{
+                flex-direction: row-reverse;
+                justify-content: space-between;
+            }
         }
         .work_history{
             p{
@@ -1301,6 +1305,25 @@ footer{
         width:100%;
         padding-top: 64px;
         padding-bottom: 64px;
+    }
+    .literature{
+        width:fit-content;
+        a{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+    }
+    .work_history{
+        p{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            span{
+                text-wrap:nowrap;
+            }
+        }
+        .writing_title{
+            align-self:flex-start;
+        }
     }
     // .work, .work2{
     //     // gap: 32px;
