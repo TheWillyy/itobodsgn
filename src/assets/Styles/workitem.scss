@@ -5,6 +5,7 @@
     gap:16px;
     position:relative;
     transition: .6s cubic-bezier(0, 0.5, 0, 1) all;
+    overflow:hidden;
     // cursor:pointer;
     .cover_container{
         position:relative;
