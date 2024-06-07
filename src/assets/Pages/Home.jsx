@@ -170,10 +170,10 @@ function Home(){
             <div className='work2'>
 
                 <StickyNote text="
+                    Todo:
                     <ul>
-                        <li>Completing a Passion Product</li>
-                        <li>Experimenting for tech event</li>
-                        <li>Collaborating for a Finance Solution</li>
+                        <li>Complete Passion Projects</li>
+                        <li>Experiment for tech event</li>
                         <li>Doomscrolling</li>
                     </ul>
                 "
