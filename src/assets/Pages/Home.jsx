@@ -11,11 +11,12 @@ import StickyNote from '../Components/StickyNote.jsx'
 import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
-import pfp from "../Media/Images/pfp.gif"
+import pfp from "../Media/Images/pfp.webm"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
 import photoshop from "../Media/Images/Photoshop.png"
 import illustrator from "../Media/Images/Illustrator.png"
+import resumefile from "../Media/Williams Eni Resume 2024.pdf"
 import figma from "../Media/Images/Figma.png"
 import principle from "../Media/Images/PrincipleApp.png"
 import ae from "../Media/Images/Aftereffects.png"
@@ -81,7 +82,7 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'/>
+                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'muted autoPlay loop playsInline></video>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -101,7 +102,7 @@ function Home(){
                 <div className='cta_container'>
                     <div className='cta_buttons'>
                     <img src={resume} alt="a screenshot of williams' resume" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"} />
-                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume' alt="download resume" name="download" />
+                        <Button onClick={()=>{window.open(resumefile, "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume' alt="download resume" name="download" />
                         <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin} alt="linkedin button" name="linkedin" />
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble} alt="dribbble button" name="dribbble" />
                         <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers} alt="layers button" name="layers" />

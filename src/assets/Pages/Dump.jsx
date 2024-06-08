@@ -17,7 +17,7 @@ function Dump(){
     {/* <SmoothScroll> */}
       <div className='dump'>
           <div className='casestudy_info'>
-              <h1 className='dump_title'>Personal experiments 🧪, unfinished work 📂, collaboration projects 🫶🏾 and archives 🗑️ live here.</h1>
+              <h1 className='dump_title'>Personal experiments 🧪, unfinished work 📂, collaboration projects 🫶🏾 and the archived 🗑️ live here.</h1>
           </div>
 
           {/* <div className='dump_items dump_test'>
