@@ -1,13 +1,13 @@
 import { useState } from 'react'
 import styles from "../Styles/styles.scss"
-import spinningvinyl from "../Media/Videos/spinning vinyl.gif"
+import spinningvinyl from "../Media/Videos/spinning vinyl.webm"
 
 function NowPlaying ({songTitle='', artistsName=''}) {
 
   return (
     <>
         <div className='nowplaying'>
-            <img src={spinningvinyl} alt="a spinning vinyl animation" />
+            <video src={spinningvinyl} alt="a spinning vinyl animation" muted playsInline loop autoPlay></video>
             <div>
                 <p>{songTitle || "Deep Brown Noise"}</p>
                 <p>{artistsName || "Trust Me"}</p>

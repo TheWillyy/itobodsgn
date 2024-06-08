@@ -113,7 +113,7 @@ function Home(){
 
             <div className='work'>     
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673388/My%20Portfolio/0xhunt.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png"
                     onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
                     titleSm='0xHuntBot'
                     titleLg='Marketing Website for an on-chain analysis tool'
@@ -121,7 +121,7 @@ function Home(){
                     year="2023"
                 />      
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/casestudies/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
                     titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'

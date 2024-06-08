@@ -59,7 +59,7 @@ function HuntBot(){
         }}
         />
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673388/My%20Portfolio/0xhunt.png" alt="Shots of Website"/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png" alt="Shots of Website"/>
 
         <BodyText
             text="With an incredibly short deadline, I was tasked to design a catchy website for a web3 tool.
@@ -71,7 +71,7 @@ function HuntBot(){
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/video/upload/q_auto:low/v1717766209/Screen_Recording_Sept_15.gif" alt="shots of mascot" />
 
         <BodyText
-            text="I worked alongside Bolarinwa Owuogba, who was the Web developer on the project."
+            text="I worked alongside Bolarinwa Owuogba, who was the Web developer on the project and assisted in design critique."
         />
 
         <BillboardText link

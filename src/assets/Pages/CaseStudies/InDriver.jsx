@@ -59,7 +59,7 @@ function InDriver(){
         }}
         />
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png" alt="Cover image of shots of redesigned indriver app"/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png" alt="Cover image of shots of redesigned indriver app"/>
 
         <BodyText
             text="InDriver was introduced to Nigeria in August 2019 and has already connected more than 6,000 drivers in Lagos, competing side by side with Uber and Bolt, the existing prominent ride hailing services in Nigeria. One of the principles of the InDriver service are that cost of booking rides is always lower, passengers who use the app pay on average 20% less than other prominent hailing services.

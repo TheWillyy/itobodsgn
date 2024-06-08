@@ -70,7 +70,7 @@ useEffect(()=>{
             </div>
 
             <div className='status'>
-                <h5>{thLive}:{tmLive} Lagos, NG</h5>
+                <h5>{thLive}:{tmLive} Lagos, NG (+1)</h5>
                 <h5>Open to Work</h5>
                 {/* probably sleeping */}
             </div>
