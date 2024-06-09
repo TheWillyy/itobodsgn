@@ -29,7 +29,7 @@ useEffect(()=>{
         const currentTime = timeGetter();
         setThLive(formatTime(currentTime.getHours()))
         setTmLive(formatTime(currentTime.getMinutes()));
-    }, 1000); //clock
+    }, 10000); //clock
 
     const handleScroll = ()=>{
         setScrollY(window.scrollY);
@@ -70,7 +70,7 @@ useEffect(()=>{
             </div>
 
             <div className='status'>
-                <h5>{thLive}:{tmLive} Lagos, NG</h5>
+                <h5>{thLive}:{tmLive} Lagos, NG (+1)</h5>
                 <h5>Open to Work</h5>
                 {/* probably sleeping */}
             </div>

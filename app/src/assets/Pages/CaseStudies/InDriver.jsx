@@ -1,18 +1,17 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link, useNavigate } from "react-router-dom"
-import Button from '../Components/Button.jsx'
-import styles from "../Styles/styles.scss"
-import Reading from '../Components/Reading.jsx'
-import CaseStudyInfo from '../Components/CaseStudy/CaseStudyInfo.jsx'
-import ImgLarge from '../Components/CaseStudy/ImgLarge.jsx'
-import BodyText from '../Components/CaseStudy/BodyText.jsx'
-import ImgSmall from '../Components/CaseStudy/ImgSmall.jsx'
-import BillboardText from '../Components/CaseStudy/BillboardText.jsx'
-import transition from '../../transitions.jsx'
-import backicon from '..//Media/Icons/back-icon.svg'
-import Subheader from '../Components/CaseStudy/Subheader.jsx'
+import Button from '../../Components/Button.jsx'
+import styles from "../../Styles/styles.scss"
+import CaseStudyInfo from '../../Components/CaseStudy/CaseStudyInfo.jsx'
+import ImgLarge from '../../Components/CaseStudy/ImgLarge.jsx'
+import BodyText from '../../Components/CaseStudy/BodyText.jsx'
+import ImgSmall from '../../Components/CaseStudy/ImgSmall.jsx'
+import BillboardText from '../../Components/CaseStudy/BillboardText.jsx'
+import transition from '../../../transitions.jsx'
+import backicon from '../../Media/Icons/back-icon.svg'
+import Subheader from '../../Components/CaseStudy/Subheader.jsx'
 
-function CaseStudy1(){
+function InDriver(){
   const [scrollY, setScrollY] = useState(0);
 
   const handleScroll = () => {
@@ -42,7 +41,7 @@ function CaseStudy1(){
     <>
     <div className='casestudy'>
 
-      <Button iconsrc={backicon} customstyle={{
+      <Button iconsrc={backicon} name="back" alt="back icon" customstyle={{
             backgroundColor:'white',
             position: 'absolute',
             left: 'calc( 5vw - 16px )',
@@ -52,7 +51,7 @@ function CaseStudy1(){
           />
 
         <CaseStudyInfo props={{
-            year:'2024',
+            year:'2021',
             role:'Product Designer',
             type:"UX/Product Design",
             duration:"3 Weeks",
@@ -60,7 +59,7 @@ function CaseStudy1(){
         }}
         />
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png" alt="Cover image of shots of redesigned indriver app"/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png" alt="Cover image of shots of redesigned indriver app"/>
 
         <BodyText
             text="InDriver was introduced to Nigeria in August 2019 and has already connected more than 6,000 drivers in Lagos, competing side by side with Uber and Bolt, the existing prominent ride hailing services in Nigeria. One of the principles of the InDriver service are that cost of booking rides is always lower, passengers who use the app pay on average 20% less than other prominent hailing services.
@@ -217,9 +216,9 @@ function CaseStudy1(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="">A Usability Evaluation of a Mobile Wallet Onboarding Process</a></span></h1>
+          <h1>Read Next: <br/><span><a href="">Making it easier to find and share study material</a></span></h1>
           {/* can we automate the titles? */}
-          <Button text="Back to Top"
+          <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}
           />
         </div>
@@ -232,4 +231,4 @@ function CaseStudy1(){
   )
 }
 
-export default transition(CaseStudy1);
+export default transition(InDriver);

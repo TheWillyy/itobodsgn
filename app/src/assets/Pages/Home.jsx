@@ -11,36 +11,16 @@ import StickyNote from '../Components/StickyNote.jsx'
 import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
-import pfp from "../Media/Images/pfp.gif"
+import pfp from "../Media/Images/pfp.webm"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
 import photoshop from "../Media/Images/Photoshop.png"
 import illustrator from "../Media/Images/Illustrator.png"
+import resumefile from "../Media/Williams Eni Resume 2024.pdf"
 import figma from "../Media/Images/Figma.png"
 import principle from "../Media/Images/PrincipleApp.png"
 import ae from "../Media/Images/Aftereffects.png"
 import rive from "../Media/Images/Rive.jpeg"
-
-
-
-//TODO
-//Fix weird zoom thing [FIXED]
-//fix case study NAv on mbile [Fixed]
-//fix weird space on dump [fixed]
-//writing links should open in new tab [done]
-//send a raven custom message to my mail [done]
-//weird lack of border radius on first workitem [done]
-//custom cursor for bottm [done]
-//change favicon [done]
-//progressive blur on workitem base [doneish -  we settled]
-//404 image [done]
-//footer video [done]
-//make nav persist on currnet url [done]`
-//section with sticky note [done]
-//fix case study entry scroll thing 
-//spotify for bottom link
-//Fix weird Font thing on mobile 
-//edit bio
 
 
 function Home(){
@@ -90,73 +70,95 @@ function Home(){
         setTimeout(mailcopytimeout, 2000)
     }
     
+    const scrollToTopIntro = () => {
+        setExtendedBioVisible(false)
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        })
+    }
+
     return(
     <>
         <div className='homepage'>
             <div className='intro'>
-                <img src={pfp} alt="" className={intropfpVisible? "pfp pfp_anim" : "pfp" }/>
-                {/* <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/> */}
+                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'muted autoPlay loop playsInline></video>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
-                        <h1>For over 5 years, I have enjoyed crafting incredible visual experiences in UX and Graphic design
-                            with mainly (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) for design and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
-                            <br/>I'm always ever open to chat about design or collaborate on designing creative web and mobile experiences.
+                        <h1>For over 5 years, I have gained pleasure from crafting incredible visual experiences in Product/UX and Graphic design
+                            with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
+                            <br/>I'm open to Product Design Roles and Collaboration on creative web and mobile experiences. (or even a chat. feel free, hmu 😉)
                         </h1>
                     </div>
 
                     <h2 className='read_more custom-hover' onClick={()=>{
-                        extendedBioVisible? setExtendedBioVisible(false) : setExtendedBioVisible(true);
+                        extendedBioVisible? scrollToTopIntro() : setExtendedBioVisible(true);
                     }}>{extendedBioVisible? 'Read Less':'Read More'}</h2>
                 </div>
 
                 <div className='cta_container'>
                     <div className='cta_buttons'>
-                    <img src={resume} alt="" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"}/>
-                        <Button onClick={()=>{window.open("https://www.dropbox.com/scl/fi/s91gr0xewdmzc1c8p5ozs/Williams-Eni-Resume-2024.pdf?rlkey=os2g7i2ijenfs76tlhtylds17&st=c45mqcye&dl=0", "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume'/>
-                        <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin}/>
-                        <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble}/>
-                        <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers}/>
+                    <img src={resume} alt="a screenshot of williams' resume" className={introresumeVisible? "pfp_resume pfp_anim" : "pfp_resume"} />
+                        <Button onClick={()=>{window.open(resumefile, "_blank")}} onMouseEnter={()=>{setIntroResumeVisible(true)}} onMouseLeave={()=>{setIntroResumeVisible(false)}} text='See My Resume' alt="download resume" name="download" />
+                        <Button onClick={()=>{window.open("https://linkedin.com/in/williamseni", "_blank")}} iconsrc={linkedin} alt="linkedin button" name="linkedin" />
+                        <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble} alt="dribbble button" name="dribbble" />
+                        <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers} alt="layers button" name="layers" />
                     </div>
                     <p>Updated 1 Apr</p>
                 </div>
             </div>
 
-            <div className='work'>  
+            <div className='work'>     
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fjcdig401hj19wgjmedn.png"
-                        onClick={()=>{navigate("/casestudies/1")}} 
-                        titleSm='Indriver'
-                        titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
-                        type="Product / UX"
-                        year="2021"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png"
+                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
+                    titleSm='0xHuntBot'
+                    titleLg='Marketing Website for an on-chain analysis tool'
+                    type="Web UI & Motion Design"
+                    year="2023"
+                />      
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
+                    onClick={()=>{navigate("/casestudies/InDriver")}} 
+                    titleSm='Indriver (No Affiliation)'
+                    titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
+                    type="Product Design"
+                    year="2021"
                 />             
 
-                <WorkItem comingsoon 
+                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
                     type="Brand & UI Design"
                     year="2024"
-                    titleLg="Coming Soon"
                     titleSm="API Conference Lagos"
                 />
+
+                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766694/My%20Portfolio/a1fc2c83-7609-4dea-bf51-b031160f31dd.png" 
+                    // onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
+                    titleSm='itobo.xyz (shameless plug, duh)'
+                    titleLg='Portfolio Website for a Designer'
+                    type="UI/Motion Design & Dev"
+                    year="2024"
+                />  
 
             </div>
 
             <div className='writing'>
-                <section>
+                <section className='work_history'>
                     <p className='writing_title'>Professional Work History</p>
-                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Open to New Opportunities</a>
-                    <a style={{pointerEvents:"none"}}><span><p>Now</p></span>Product Designer &#x2192; TCI, UK</a>
-                    <a style={{pointerEvents:"none"}}><span><p>2022 - 2023</p></span>Founding Product Designer &#x2192; SourceMyGadgets, NG</a>
-                    <a style={{pointerEvents:"none"}}><span><p>2019</p></span>UI Designer &#x2192; Malon Global Tech, NG</a>
+                    <p><span>Now</span>Open to New Opportunities</p>
+                    <p><span>Now</span>Product Designer &#x2192; TCI, UK</p>
+                    <p><span>2022 - 2023</span>Founding Product Designer &#x2192; SourceMyGadgets, NG</p>
+                    <p><span>2019</span>UI Designer &#x2192; Malon Global Tech, NG</p>
                 </section>
 
-                <section>
+                <section className='literature'>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span><p>2022</p></span>Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span><p>2022</p></span>Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span><p>2020</p></span>Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design</a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma</a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma</a>
                 </section>
                 
                 <section>
@@ -170,8 +172,10 @@ function Home(){
 
                 <StickyNote text="
                     <ul>
-                        <li>pop out</li>
-                        <li>show nggas</li>
+                    <li><b>Todo:</b></li>
+                        <li>Complete Passion Projects</li>
+                        <li>Experiment for tech event</li>
+                        <li>Doomscrolling</li>
                     </ul>
                 "
             />
@@ -189,7 +193,7 @@ function Home(){
                         </div>
                     </div>
 
-                    <h5>#dump</h5>
+                    <p className='title_sm'>#dump</p>
                 </div>
             </div>
 

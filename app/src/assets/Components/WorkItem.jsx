@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import styles from "../Styles/workitem.scss"
 
-function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type="", year="", covervid="", titleSm, titleLg, onClick}) {
+function WorkItem({dump, alt, comingsoon, iframelink, dumpLink="", coverimg="", type="", year="", covervid="", titleSm, titleLg, onClick}) {
 
   return (
     <>
@@ -21,16 +21,16 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             <div className='cover_container'>
 
                 {covervid? 
-                    <video playsInline autoPlay muted loop src={covervid}></video>
+                    <video loading="lazy" playsInline autoPlay muted loop src={covervid}></video>
                 :
-                coverimg? <img src={coverimg} alt=""/> : '' }
+                coverimg? <img loading="lazy" src={coverimg} alt={alt}/> : '' }
 
-                    <a href={dumpLink}>Source &#x2197;</a>
+                    {dumpLink !='' ? <a href={dumpLink}>Source &#x2197;</a> : ''}
 
             </div>
             
             <div className='title_sm'>
-                <h5>{titleSm}</h5>
+                <p>{titleSm}</p>
             </div>
         </div>
     )
@@ -41,11 +41,11 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             <div className='cover_container'>
 
                 <div className='title_lg' style={comingsoon? {filter: "blur(0px)", color:"#1F1F1F", opacity: "1", transform: "translateY(-16px)"}: {} }>
-                    <h2>{titleLg || "Longer Title"}</h2>
+                    <h2>{comingsoon? "Coming Soon" : titleLg || "Longer Title"}</h2>
                     {/* cut by ellipsis on height limit */}
                 </div>
 
-                {coverimg? <img src={coverimg} alt="" /> : ''}
+                {coverimg? comingsoon? <img style={{filter:"grayscale(1) opacity(0.1)"}} src={coverimg} alt={alt} loading='lazy' /> : <img src={coverimg} alt={alt} loading='lazy' /> : ''}
 
                 <div className='workitem_desc' style={comingsoon? {bottom:"calc(100% - 48px)", top:"0"}: {} }>
                     <div className='workitem_type'>{type || "Type"}</div>
@@ -55,7 +55,7 @@ function WorkItem({dump, comingsoon, iframelink, dumpLink="", coverimg="", type=
             </div>
 
             <div className='title_sm'>
-                <h5>{titleSm || "Title"}</h5>
+                <p>{titleSm || "Title"}</p>
             </div>
         </div>
     }
