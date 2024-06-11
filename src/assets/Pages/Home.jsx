@@ -156,15 +156,15 @@ function Home(){
 
                 <section className='literature'>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design &#x2197; </a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma &#x2197; </a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma &#x2197; </a>
                 </section>
                 
                 <section>
                     <p className='writing_title'>Resources</p>
-                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template</a>
-                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources</a>
+                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template &#x2197; </a>
+                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources &#x2197; </a>
                 </section>
             </div>
 
