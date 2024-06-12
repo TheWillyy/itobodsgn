@@ -32,6 +32,13 @@ function Dump(){
 
           <div className='dump_items'>
 
+            <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718206902/010b4a56-6187-429d-8126-30653cefa3b1.png"
+              type="UX Design"
+              year="2023"
+              titleLg="Making it easier to find and share study material"
+              titleSm="Workout Logger"
+            />
+
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
               titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
