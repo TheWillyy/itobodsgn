@@ -111,37 +111,45 @@ function Home(){
                 </div>
             </div>
 
-            <div className='work'>     
-
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png"
-                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
-                    titleSm='0xHuntBot'
-                    titleLg='Marketing Website for an on-chain analysis tool'
-                    type="Web UI & Motion Design"
-                    year="2023"
-                />      
-
+            <div className='work'>   
+                
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/casestudies/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
                     titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
                     type="Product Design"
                     year="2021"
-                />             
+                />   
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/c_scale,q_auto:low,w_1056/v1717886600/My%20Portfolio/0xHuntBot.png"
+                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
+                    titleSm='0xHuntBot'
+                    titleLg='Marketing Website for an on-chain analysis tool'
+                    type="Web UI & Motion Design"
+                    year="2023"
+                />  
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718206902/010b4a56-6187-429d-8126-30653cefa3b1.png"
+                    type="Product Design"
+                    year="2023"
+                    titleLg="Simple way to keep track of workout routines"
+                    titleSm="Workout Logger"
+                    onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
+                />    
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280479/My%20Portfolio/portfolio_cover.png" 
+                    onClick={()=>{window.open("/casestudies/Itobodotxyz")}} 
+                    titleSm='itobo.xyz (shameless plug, duh)'
+                    titleLg='Portfolio Website for Williams Eni'
+                    type="Web UI, Motion Design & Dev"
+                    year="2024"
+                />            
 
                 <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
                     type="Brand & UI Design"
                     year="2024"
                     titleSm="API Conference Lagos"
                 />
-
-                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766694/My%20Portfolio/a1fc2c83-7609-4dea-bf51-b031160f31dd.png" 
-                    // onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
-                    titleSm='itobo.xyz (shameless plug, duh)'
-                    titleLg='Portfolio Website for a Designer'
-                    type="UI/Motion Design & Dev"
-                    year="2024"
-                />  
 
             </div>
 

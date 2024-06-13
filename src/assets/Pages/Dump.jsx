@@ -32,17 +32,18 @@ function Dump(){
 
           <div className='dump_items'>
 
-            <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718206902/010b4a56-6187-429d-8126-30653cefa3b1.png"
-              type="UX Design"
+            {/* <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718206902/010b4a56-6187-429d-8126-30653cefa3b1.png"
+              type="Product Design"
               year="2023"
-              titleLg="Making it easier to find and share study material"
+              titleLg="Easy way to keep track of your workout routines"
               titleSm="Workout Logger"
-            />
+              onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
+            /> */}
 
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
               titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
-              type="Product/UI Design"
+              type="Product Design"
               year="2021"
               onClick={()=>{navigate("/casestudies/Bookateria")}} 
             />
@@ -50,7 +51,7 @@ function Dump(){
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
               titleLg="Crafting a palatable learning platform for cooking beginners"
               titleSm="Spiced Up!"
-              type="Product/UI Design"
+              type="Product Design"
               year="2020"
               onClick={()=>{navigate("/casestudies/SpicedUp")}} 
             />
