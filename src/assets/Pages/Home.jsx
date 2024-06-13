@@ -129,7 +129,7 @@ function Home(){
                     year="2023"
                 />  
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718206902/010b4a56-6187-429d-8126-30653cefa3b1.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
                     type="Product Design"
                     year="2023"
                     titleLg="Simple way to keep track of workout routines"
