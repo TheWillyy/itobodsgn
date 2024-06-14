@@ -84,7 +84,7 @@ function Home(){
         <div className='homepage'>
             <div className='intro'>
 
-                {window.innerHeight < 500 ? <img src={pfp2} alt="a short looping animation of williams' face"/> :
+                {window.innerWidth < 500 ? <img src={pfp2} alt="a short looping animation of williams' face"/> :
                 <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/mp4" height="auto" width="auto" poster={pfp2} ></video>
                 }
 
