@@ -82,7 +82,7 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'muted autoPlay loop playsInline></video>
+                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/webm" height="auto" width="auto"></video>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -214,7 +214,7 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            playsInline muted autoPlay loop
+                            playsInline muted autoPlay loop type="video/webm" height="auto" width="auto"
                             src={footervid}
                             className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
