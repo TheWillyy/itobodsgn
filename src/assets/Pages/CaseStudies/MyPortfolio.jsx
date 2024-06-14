@@ -88,7 +88,7 @@ function MyPortfolio(){
               </br></br>
               Goals:
               </br>Separate work into case studies, dump and literature.
-              </br>Make easily customizable components for each work entry and page.
+              </br>Create easily customizable components for each work entry and page.
               </br>Make a personal site that resonates with my skill and character"
           />
         </section>
@@ -97,9 +97,11 @@ function MyPortfolio(){
         <section>
           <Subheader text="Approach"/>
           <BodyText
-              text="I wanted to learn how recruiters scan portfolios nowadays: I watched hours of portfolio reviews, even for enjoyment, I should confess.
-              Technical know-how for building modern and stylish interaction and design into the website couldn’t have been compromisable, but I stuck to something simpler.
-              Incrementally test with anyone available to evaluate the simplicity and findability of work."
+              text="I wanted to learn how recruiters scan portfolios nowadays: I watched hours of portfolio reviews, even for enjoyment, I should confess. 
+              This helped realign my perspective to the 5-second window of opportunity to intoduce yourself and your work with the section above the fold to keep it simple. Everything else can be as flexible as needed.
+              </br></br>
+              Technical know-how for building modern and stylish interaction and design into the website could have cost more than budgeted, so I stuck to something simpler.
+              I ran guerilla tests to qualitatively evaluate the simplicity and findability of each section and sub-page."
           />
         </section>
 
@@ -115,20 +117,24 @@ function MyPortfolio(){
         <section>
           <Subheader text="Implementation"/>
           <BodyText
-              text="I used react.js to build the final design into a working prototype since it is already a skill in my toolbox and to move fast without overcoming a learning curve that may slow down the process. Not that I don’t love challenges, it simply wasn’t necessary this time.
+              text="I used react.js to build the final design into a working prototype since it is already a skill in my toolbox and helpful to move fast without overcoming a learning curve that may slow down the process. </br></br>I do love challenges, but it simply wasn’t necessary this time.
               However, it was lovely to implement animations and micro-interactions as they’re a significant part of my identity in product exploration and design.
               
               </br></br>
-              Challenges faced during implementation
+              <b>Challenges I faced during implementation:</b>
               </br>There were many stumbling blocks, however, one of the most notable was navigation and page transition. I wanted to implement a stylized page transition effect but with React.JS, route changing is usually instant and not directly customizable, so I used framer-motion to handle the transition effect, eventually running into the so-called learning curve I avoided."
           />
         </section>
+
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280440/My%20Portfolio/03c451a2-583b-433f-97da-24ac1d3239ff.png" alt="preview image exploration"/>
+        <BodyText text="preview image exploration" />
 
         <BillboardText link
           onClick={()=>{window.open("https://x.com/itxbo/status/1779445608765436409", "_blank")}} 
           text="Reporting my progress and 'Rubberducking' in a twitter thread &#x2197;"
         />
 
+        
         <section>
           <Subheader text="Conclusion"/>
           <BodyText
@@ -137,7 +143,6 @@ function MyPortfolio(){
           />
         </section>
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280440/My%20Portfolio/03c451a2-583b-433f-97da-24ac1d3239ff.png" alt="preview image exploration"/>
 
 
 

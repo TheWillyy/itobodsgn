@@ -138,11 +138,11 @@ function Home(){
                 />    
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280479/My%20Portfolio/portfolio_cover.png" 
-                    onClick={()=>{window.open("/casestudies/Itobodotxyz")}} 
                     titleSm='itobo.xyz (shameless plug, duh)'
                     titleLg='Portfolio Website for Williams Eni'
                     type="Web UI, Motion Design & Dev"
                     year="2024"
+                    onClick={()=>{navigate("/casestudies/Itobodotxyz")}}
                 />            
 
                 <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
