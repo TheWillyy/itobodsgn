@@ -84,7 +84,7 @@ function Home(){
         <div className='homepage'>
             <div className='intro'>
 
-                {window.innerWidth < 500 ? <img src={pfp2} alt="a short looping animation of williams' face"/> :
+                {window.innerWidth < 500 ? <img src={pfp2} className={intropfpVisible? "pfp pfp_anim" : "pfp" } alt="a short looping animation of williams' face" loading="lazy"/> :
                 <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/mp4" height="auto" width="auto" poster={pfp2} ></video>
                 }
 
@@ -213,7 +213,7 @@ function Home(){
             <footer>
                 <div className='footer_info'>
                     <div className='activity'>
-                        <NowPlaying songTitle='Pain' artistsName='Pinkpantheress'/>
+                        <NowPlaying songTitle='' artistsName=''/>
                         <Reading book_title="The Design of Everyday Things"/>
                     </div>
 
