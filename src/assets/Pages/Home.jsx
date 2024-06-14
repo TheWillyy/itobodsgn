@@ -12,6 +12,7 @@ import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
 import pfp from "../Media/Images/pfp.webm"
+import pfp2 from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
 import photoshop from "../Media/Images/Photoshop.png"
@@ -82,7 +83,7 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/mp4" height="auto" width="auto"></video>
+                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/mp4" height="auto" width="auto" poster={pfp2} ></video>
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -214,7 +215,7 @@ function Home(){
 
                     <div className='credits'>
                         <video
-                            playsInline muted autoPlay loop type="video/mp4" height="auto" width="auto"
+                            playsInline muted autoPlay loop type="video/mp4"
                             src={footervid}
                             className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{
