@@ -1,0 +1,27 @@
+button{
+    padding: 16px 24px;
+    border-radius:48px;
+    background-color: #000000;
+    color:#f1f1f1;
+    cursor:pointer;
+    outline:none;
+    border:none;
+    transition: var(--transition3s);
+    box-shadow:
+    inset 0px -2px 0px #000000,
+    inset 0px -4px 12px #b3b3b3A0;
+    &:hover{
+        // background-color:#F2F2F2;
+        // color:#1F1F1F;
+        background-color: #000000;
+        color:#F2F2F2;
+        box-shadow:none;
+    }
+}
+.iconbtn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:16px 20px;
+    box-shadow:none;
+}
