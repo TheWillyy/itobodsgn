@@ -12,6 +12,7 @@ import linkedin from '../Media/Icons/linkedin-logo.svg'
 import dribbble from '../Media/Icons/dribbble-logo.svg'
 import layers from '../Media/Icons/layers-logo.svg'
 import pfp from "../Media/Images/pfp.webm"
+import pfp2 from "../Media/Images/pfp.gif"
 import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
 import photoshop from "../Media/Images/Photoshop.png"
@@ -82,7 +83,11 @@ function Home(){
     <>
         <div className='homepage'>
             <div className='intro'>
-                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy'muted autoPlay loop playsInline></video>
+
+                {window.innerWidth < 500 ? <img src={pfp2} className={intropfpVisible? "pfp pfp_anim" : "pfp" } alt="a short looping animation of williams' face" loading="lazy"/> :
+                <video src={pfp} alt="a short looping animation of williams' face" className={intropfpVisible? "pfp pfp_anim" : "pfp" } loading='lazy' muted autoPlay loop playsInline type="video/mp4" height="auto" width="auto" poster={pfp2} ></video>
+                }
+
                 <div className='bio_text_container'>
 
                     <h1><span className='intro_name custom-hover' onMouseEnter={()=>{setIntropfpVisible(true)}} onMouseLeave={()=>{setIntropfpVisible(false)}} >Williams Eni</span>&mdash;Digital Product and Interaction Designer based in Lagos, Nigeria.</h1>
@@ -90,7 +95,7 @@ function Home(){
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
                         <h1>For over 5 years, I have gained pleasure from crafting incredible visual experiences in Product/UX and Graphic design
                             with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
-                            <br/>I'm open to Product Design Roles and Collaboration on creative web and mobile experiences. (or even a chat. feel free, hmu 😉)
+                            <br/>I'm open to join your team in Product Design Roles or Collaborate with you on creative web and mobile experiences. (even a chat too. feel free, hmu 😉)
                         </h1>
                     </div>
 
@@ -111,37 +116,45 @@ function Home(){
                 </div>
             </div>
 
-            <div className='work'>     
-
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png"
-                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
-                    titleSm='0xHuntBot'
-                    titleLg='Marketing Website for an on-chain analysis tool'
-                    type="Web UI & Motion Design"
-                    year="2023"
-                />      
-
+            <div className='work'>   
+                
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/casestudies/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
                     titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
                     type="Product Design"
                     year="2021"
-                />             
+                />   
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/c_scale,q_auto:low,w_1056/v1717886600/My%20Portfolio/0xHuntBot.png"
+                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
+                    titleSm='0xHuntBot'
+                    titleLg='Marketing Website for an on-chain analysis tool'
+                    type="Web UI & Motion Design"
+                    year="2023"
+                />  
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
+                    type="Product Design"
+                    year="2023"
+                    titleLg="Simple way to keep track of workout routines"
+                    titleSm="Workout Logger"
+                    onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
+                />    
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280479/My%20Portfolio/portfolio_cover.png" 
+                    titleSm='itobo.xyz (shameless plug, duh)'
+                    titleLg='Portfolio Website for Williams Eni'
+                    type="Web UI, Motion Design & Dev"
+                    year="2024"
+                    onClick={()=>{navigate("/casestudies/Itobodotxyz")}}
+                />            
 
                 <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
                     type="Brand & UI Design"
                     year="2024"
                     titleSm="API Conference Lagos"
                 />
-
-                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766694/My%20Portfolio/a1fc2c83-7609-4dea-bf51-b031160f31dd.png" 
-                    // onClick={()=>{window.open("https://itobo.xyz", "_blank")}} 
-                    titleSm='itobo.xyz (shameless plug, duh)'
-                    titleLg='Portfolio Website for a Designer'
-                    type="UI/Motion Design & Dev"
-                    year="2024"
-                />  
 
             </div>
 
@@ -156,15 +169,15 @@ function Home(){
 
                 <section className='literature'>
                     <p className='writing_title'>Literature</p>
-                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design</a>
-                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma</a>
-                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma</a>
+                    <a href="https://bootcamp.uxdesign.cc/imagining-immersive-design-319279ccd696" target='_blank'><span>2022</span>[Medium] Imagining Immersive Design &#x2197; </a>
+                    <a href="https://medium.com/design-bootcamp/deconstructing-constraints-in-figma-ad77d1774ad7" target='_blank'><span>2022</span>[Bootcamp] Deconstructing Constraints in Figma &#x2197; </a>
+                    <a href="https://uxdesign.cc/prototyping-with-figma-interactions-228dbc82fe00" target='_blank'><span>2020</span>[UXDesign.cc] Prototyping with Figma &#x2197; </a>
                 </section>
                 
                 <section>
                     <p className='writing_title'>Resources</p>
-                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template</a>
-                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources</a>
+                    <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template &#x2197; </a>
+                    <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources &#x2197; </a>
                 </section>
             </div>
 
@@ -200,13 +213,13 @@ function Home(){
             <footer>
                 <div className='footer_info'>
                     <div className='activity'>
-                        <NowPlaying songTitle='Pain' artistsName='Pinkpantheress'/>
+                        <NowPlaying songTitle='' artistsName=''/>
                         <Reading book_title="The Design of Everyday Things"/>
                     </div>
 
                     <div className='credits'>
                         <video
-                            playsInline muted autoPlay loop
+                            playsInline muted autoPlay loop type="video/mp4"
                             src={footervid}
                             className={`credits_video  ${introvidVisible? "credits_video_reveal" : ""}`}
                             style={{

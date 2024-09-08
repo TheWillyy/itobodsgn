@@ -11,6 +11,9 @@ import Bookateria from './assets/Pages/CaseStudies/Bookateria'
 import SpicedUp from './assets/Pages/CaseStudies/SpicedUp'
 import HuntBot from './assets/Pages/CaseStudies/0xHuntBot'
 import { AnimatePresence } from "framer-motion";
+import { Analytics } from '@vercel/analytics/react';
+import MyPortfolio from './assets/Pages/CaseStudies/MyPortfolio';
+import WorkoutTracker from './assets/Pages/CaseStudies/WorkoutTracker';
 
 function App() {
   const location = useLocation();
@@ -34,7 +37,10 @@ function App() {
           <Route path="/casestudies/Bookateria" element={<Bookateria/>} key="cs1"/>
           <Route path="/casestudies/SpicedUp" element={<SpicedUp/>} key="cs1"/>
           <Route path="/casestudies/0xHuntBot" element={<HuntBot/>} key="cs1"/>
+          <Route path="/casestudies/WorkoutTracker" element={<WorkoutTracker/>} key="cs1"/>
+          <Route path="/casestudies/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
         </Routes>
+        <Analytics/>
       </AnimatePresence>
     </>
   )
