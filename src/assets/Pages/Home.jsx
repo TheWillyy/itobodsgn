@@ -17,7 +17,7 @@ import resume from "../Media/Images/resume.jpeg"
 import footervid from "../Media/Videos/0523 footer.mp4"
 import photoshop from "../Media/Images/Photoshop.png"
 import illustrator from "../Media/Images/Illustrator.png"
-import resumefile from "../Media/Williams Eni Resume 2024.pdf"
+import resumefile from "../Media/Williams Eni Resume.pdf"
 import figma from "../Media/Images/Figma.png"
 import principle from "../Media/Images/PrincipleApp.png"
 import ae from "../Media/Images/Aftereffects.png"
@@ -25,7 +25,7 @@ import rive from "../Media/Images/Rive.jpeg"
 
 
 function Home(){
-    const [extendedBioVisible, setExtendedBioVisible] = useState(false);
+    const [extendedBioVisible, setExtendedBioVisible] = useState(true);
     const [intropfpVisible, setIntropfpVisible] = useState(false);
     const [introresumeVisible, setIntroResumeVisible] = useState(false);
     const [introvidVisible, setIntrovidVisible] = useState(false);
@@ -94,8 +94,8 @@ function Home(){
 
                     <div className={`extended_bio_text_container ${extendedBioVisible ? '' : 'hidden' }`}>
                         <h1>For over 5 years, I have gained pleasure from crafting incredible visual experiences in Product/UX and Graphic design
-                            with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction design and animation.
-                            <br/>I'm open to join your team in Product Design Roles or Collaborate with you on creative web and mobile experiences. (even a chat too. feel free, hmu 😉)
+                            with Early-stage Startups, Collectives, Communities, Non-profits and Individuals using tools like (<span><img src={figma} alt="figma" /></span>, <span><img src={photoshop} alt="photoshop" /></span> & <span><img src={illustrator} alt="illustrator" /></span>) and (<span><img src={principle} alt="principle" /></span>, <span><img src={ae} alt="After Effects" /></span> & <span><img src={rive} alt="rive" /></span>) for Interaction Design and Animation.
+                            <br/>I'm open to join Product Design Teams or Collaborate with you on creative web and mobile experiences. (even a chat too. feel free, hmu 😉)
                         </h1>
                     </div>
 
@@ -112,16 +112,16 @@ function Home(){
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble} alt="dribbble button" name="dribbble" />
                         <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers} alt="layers button" name="layers" />
                     </div>
-                    <p>Updated 1 Apr</p>
+                    <p>Updated 9 Sep</p>
                 </div>
             </div>
 
             <div className='work'>   
                 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/casestudies/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
-                    titleLg='Tackling usage obstacles on InDriver as a Digital Hailing Service'
+                    titleLg='Fixing User Adoption Issues on InDriver'
                     type="Product Design"
                     year="2021"
                 />   
@@ -134,7 +134,7 @@ function Home(){
                     year="2023"
                 />  
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
                     type="Product Design"
                     year="2023"
                     titleLg="Simple way to keep track of workout routines"
@@ -142,7 +142,7 @@ function Home(){
                     onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
                 />    
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718280479/My%20Portfolio/portfolio_cover.png" 
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718280479/My%20Portfolio/portfolio_cover.png" 
                     titleSm='itobo.xyz (shameless plug, duh)'
                     titleLg='Portfolio Website for Williams Eni'
                     type="Web UI, Motion Design & Dev"
