@@ -100,7 +100,8 @@ function InDriver(){
         <section>
           <Subheader text="Competitive Analysis"/>
           <BodyText
-              text="The goal of this phase was to compare the core features with the two other main competitors for evidence on where InDriver stands among them in terms of completeness or where it has an edge over them, and disover opportunities for improvement by including or suggest essential features that may have been omitted"
+              text="The goal of this phase was to compare the core features with the two other main competitors for evidence on where InDriver stands among them in terms of completeness or where it has an edge over them, and disover opportunities for improvement by including or suggest essential features that may have been omitted.
+              </br></br>The study uncovered the need for clear distinction between Driver and passenger onboarding in the application since both are handled in the same application. It also revealed that trip history was missing, which could pose a problem in tracking past trips and drivers in support evidence cases"
           />
         </section>
 
@@ -112,9 +113,9 @@ function InDriver(){
               text="With Appstore Reviews being an important source of user feedback from users who have actually used the application, I went through critical (2 stars and below) reviews on the application on Google Play Store and discovered that: 
             <br>
             <ul>
-              <li>a sizeable number of people encountered issues with <b>geolocation and matching</b> with drivers </li>
-              <li>some drivers <b>inappropriately contact riders</b> outside the confines of transporting them to their destinations </li>
-              <li> <b>inactive customer support</b> systems and centers. </li>
+              <li>A sizeable number of people encountered issues with <b>geolocation and matching</b> with drivers </li>
+              <li>Some drivers <b>inappropriately contact riders</b> outside the confines of transporting them to their destinations </li>
+              <li>Inactive customer support systems and centers. </li>
             </ul>"
           />
         </section>
@@ -138,8 +139,6 @@ function InDriver(){
           />
         </section>
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1725886396/My%20Portfolio/cf39439b-2e88-477e-a6b2-143efff17e61.png" alt="sticky notes for user responses clustered into related issues" divstyle={{height: 'auto'}}/>
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739830/My%20Portfolio/oynrx6nkkzi8leb4re9n.png" alt="projected user personas"/>
-
 
 
         <section>
@@ -148,11 +147,13 @@ function InDriver(){
               text="I was exposed to these findings:
               <br>
               <ul>
-              <li>Despite the affordability and flexibility of prices on the side of passengers (riders) and the low commission on the side of the drivers, Drivers make a relatively lower income while using InDriver than other services.</li>
-              <li>There's also a case where the cost of a journey may exceed the agreed fare, diminishing the profit that can be made by the driver.</li>
+                <li>Despite the affordability and flexibility of prices on the side of passengers (riders) and the low commission on the side of the drivers, Drivers make a relatively lower income while using InDriver than other services.</li>
+                <li>There's also a case where the cost of a journey may exceed the agreed fare, diminishing the profit that can be made by the driver.</li>
               </ul>"
           />
         </section>
+
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739830/My%20Portfolio/oynrx6nkkzi8leb4re9n.png" alt="projected user personas"/>
         
         <section>
           <BillboardText text="Recommendations"/>
