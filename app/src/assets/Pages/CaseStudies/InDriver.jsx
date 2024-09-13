@@ -101,7 +101,7 @@ function InDriver(){
           <Subheader text="Competitive Analysis"/>
           <BodyText
               text="The goal of this phase was to compare the core features with the two other main competitors for evidence on where InDriver stands among them in terms of completeness or where it has an edge over them, and disover opportunities for improvement by including or suggest essential features that may have been omitted.
-              </br></br>The study uncovered a need for clear distinction between Driver and passenger onboarding in the application since bith are handled in the same application. It also revealed that trip history was missing, which could pose a problem in tracking past trips and drivers in support evidence cases"
+              </br></br>The study uncovered a need for clear distinction between Driver and passenger onboarding in the application since both are handled in the same application. It also revealed that trip history was missing, which could pose a problem in tracking past trips and drivers in support evidence cases"
           />
         </section>
 
