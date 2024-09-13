@@ -55,51 +55,61 @@ function InDriver(){
             role:'Product Designer',
             type:"UX/Product Design",
             duration:"3 Weeks",
-            title:"Tackling usage obstacles on InDriver as a Digital Hailing Service"
+            title:"Fixing User Adoption Issues on InDriver"
         }}
         />
 
+
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png" alt="Cover image of shots of redesigned indriver app"/>
 
-        <BodyText
-            text="InDriver was introduced to Nigeria in August 2019 and has already connected more than 6,000 drivers in Lagos, competing side by side with Uber and Bolt, the existing prominent ride hailing services in Nigeria. One of the principles of the InDriver service are that cost of booking rides is always lower, passengers who use the app pay on average 20% less than other prominent hailing services.
-            <br/><br/>Despite such attractive negotiability of fares enough to have a large chunk of users in its market, InDriver has not had huge enough adoption compared to the others."
-        />
-
-        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739827/My%20Portfolio/jgcqhr4vprapeu2rpr4u.jpg" img1alt="fromt view of various yellow taxi cabs in lagos state" img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/uefuczcbxdmg003e6dvb.jpg" img2alt="side view of a yellow taxi in lagos state, the taxi is in motion"/>
+        <section>
+          <BillboardText text="Sharing a Market with Transport Giants"/>
+          <BodyText
+              text="InDriver was introduced to Nigeria in August 2019 and has already connected more than 6,000 drivers in Lagos, competing side by side with Uber and Bolt, the existing prominent ride hailing services in Nigeria. 
+              <br/><br/>The fares are always lower than its competitors, passengers who use the app pay on average 20% less than other prominent hailing services. However, the attractive negotiability of fares has not been enough to have a large chunk of users in its market, InDriver has not had huge enough adoption compared to the others."
+          />
+        </section>
+        {/* <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739827/My%20Portfolio/jgcqhr4vprapeu2rpr4u.jpg" img1alt="fromt view of various yellow taxi cabs in lagos state" img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/uefuczcbxdmg003e6dvb.jpg" img2alt="side view of a yellow taxi in lagos state, the taxi is in motion"/> */}
 
         <section>
-          <Subheader text="Why?"/>
+          <BillboardText text="What issues affect the adoption and usage of InDriver among commuters?"/>
           <BodyText
-              text="I would assume, it is the case of safety. There have been numerous breaches to safety reported by users of Bolt and Uber in Nigeria but not many from InDriver. 
-              <br/>Could this also be a result of the relatively small user base or an inauthentic looking interface?"
+              text="I started by assuming they were safety and trust issues. There have been numerous breaches to safety reported by users of Bolt and Uber in Nigeria. however, there hasn't been many by InDriver users. 
+              <br/>Could this also be a result of the relatively small user base or an inauthentic looking interface? <br/> <br/> We needed to discover more, and validate these assumptions"
           />
         </section>
 
- 
-        <BillboardText text="What specific issues affect the adoption and usage of InDriver among commuters?" />
+        {/* <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/ec0aoiz4wshl1z1dkstl.png" alt="image of the modals to book a ride on the current and proposed redesign if the indriver app, side by side"/> */}
+        
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/ec0aoiz4wshl1z1dkstl.png" alt="image of the modals to book a ride on the current and proposed redesign if the indriver app, side by side"/>
 
         <section>
-          <Subheader text="Heurisic Evaluation"/>
+          <Subheader text="Heuristic Evaluation"/>
           <BodyText
-              text="I did a Heuristic Evaluation to find and tackle any superficial usability problems.
+              text="I did a Heuristic Evaluation to find and tackle any superficial usability issues within the application.
               <br>
-              The few problems discovered in this phase were:
+              The problems discovered in this phase were:
               <ul>
-              <li>Even after rides have been completed, the Ride History remained empty at random times and is a setback on integrity as long as security is considered.</li>
-              <li>Unauthorized users have the ability to accept rides and/or give feedback on ride requests.</li>
+                <li>Even after rides have been completed, the Ride History remained empty at random times and is a setback on integrity as long as security is considered.</li>
+                <li>Unauthorized users have the ability to accept rides and/or give feedback on ride requests.</li>
               </ul>"
           />
         </section>
 
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739831/My%20Portfolio/nk7zusjh8yo8pupxahw4.png" alt="top critical revies of the app on app store and google play store"/>
+
+        <section>
+          <Subheader text="Competitive Analysis"/>
+          <BodyText
+              text="The goal of this phase was to compare the core features with the two other main competitors for evidence on where InDriver stands among them in terms of completeness or where it has an edge over them, and disover opportunities for improvement by including or suggest essential features that may have been omitted"
+          />
+        </section>
+
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1725959334/My%20Portfolio/ab12c45b-6b6b-49ef-86ad-4c7e74c58f02.png" alt="competitive analysis summary" divstyle={{height: 'auto'}}/>
 
         <section>
           <Subheader text="App Store Reviews"/>
           <BodyText
-              text="With Appstore Reviews being an important source of user feedback from users who have actually used the application, I went through critical reviews on the application on Google Play Store and discovered that: 
+              text="With Appstore Reviews being an important source of user feedback from users who have actually used the application, I went through critical (2 stars and below) reviews on the application on Google Play Store and discovered that: 
             <br>
             <ul>
               <li>a sizeable number of people encountered issues with <b>geolocation and matching</b> with drivers </li>
@@ -108,9 +118,9 @@ function InDriver(){
             </ul>"
           />
         </section>
-        
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739830/My%20Portfolio/oynrx6nkkzi8leb4re9n.png" alt="projected user personas"/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739831/My%20Portfolio/nk7zusjh8yo8pupxahw4.png" caption="top critical reviews of the app on app store and google play store" alt="top critical reviews of the app on app store and google play store"/>
 
+        
         <section>
           <Subheader text="User Interviews"/>
           <BodyText
@@ -127,11 +137,15 @@ function InDriver(){
               </ol>"
           />
         </section>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1725886396/My%20Portfolio/cf39439b-2e88-477e-a6b2-143efff17e61.png" alt="sticky notes for user responses clustered into related issues" divstyle={{height: 'auto'}}/>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739830/My%20Portfolio/oynrx6nkkzi8leb4re9n.png" alt="projected user personas"/>
+
+
 
         <section>
           <Subheader text="Insights from Interviews"/>
           <BodyText
-              text="I was exposed to the fact that:
+              text="I was exposed to these findings:
               <br>
               <ul>
               <li>Despite the affordability and flexibility of prices on the side of passengers (riders) and the low commission on the side of the drivers, Drivers make a relatively lower income while using InDriver than other services.</li>
@@ -141,22 +155,36 @@ function InDriver(){
         </section>
         
         <section>
-          <Subheader text="Recommendation"/>
-          <BodyText
-              text="
-              Given the common problems people face with using InDriver, which are as follows:
-              <ul>
-               <li>The automated support system is unresponsive.</li>
-               <li>Some drivers contact riders outside the app inappropriately.</li>
-               <li>Some drivers change trip fares when they arrive at the pickup locations after they have been agreed upon.</li>
-               <li>Profit from ride fares reduces as trips get longer because the agreed prices do not change.</li>
-               <li>Taking too much time to find available drivers and other GPS issues.</li>
-              </ul>
-              
-              Users rarely get any support for errors with locating drivers or inappropriate driver behaviour and fixed fares become a detriment to the drivers' profit when the time taken for a trip is longer than usual.
-              "
+          <BillboardText text="Recommendations"/>
+
+          <BodyText 
+            text="I recommended these solutions: 
+            <ul>
+              <li>Provision of physical customer support centers for cases when reporting an issue via email to customer support may not suffice.</li>
+              <li>In-app calling. This way, it is easier to preserve rider anonymity.</li>
+              <li>Improving customer support and how driver misconduct is handled.</li>
+              <li>Quick options for reporting based on the most frequent occurrences of misconduct.</li>
+              <li>Suggesting that riders tip their drivers for trips that take longer than expected.</li>
+              <li>Visual cues for driver and rider location</li>
+            <ul/>
+            "
+          
           />
-          <BodyText text="I recommended these solutions:" />
+
+          <BodyText
+            text="
+            Given the common problems people face with using InDriver, which are as follows:
+            <ul>
+              <li>The automated support system is unresponsive.</li>
+              <li>Some drivers contact riders outside the app inappropriately.</li>
+              <li>Some drivers change trip fares when they arrive at the pickup locations after they have been agreed upon.</li>
+              <li>Profit from ride fares reduces as trips get longer because the agreed prices do not change.</li>
+              <li>Taking too much time to find available drivers and other GPS issues.</li>
+            </ul>
+            
+            Users rarely get any support for errors with locating drivers or inappropriate driver behaviour and fixed fares become a detriment to the drivers' profit when the time taken for a trip is longer than usual.
+            "
+          />
         </section>
 
         <section>
@@ -165,7 +193,7 @@ function InDriver(){
         </section>
         
           <Subheader text="In-app calling. This way, it is easier to preserve rider anonymity." />
-          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739828/My%20Portfolio/fcn8acsvpqljlk9ytps6.png" alt="screenshot showing in app calling feature"/>
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739828/My%20Portfolio/fcn8acsvpqljlk9ytps6.png" alt="screenshot showing in app calling feature"/>
 
         <section>
           <Subheader text="Improving customer support and how driver misconduct is handled." />
@@ -176,34 +204,34 @@ function InDriver(){
           <Subheader text="Quick options for reporting based on the most frequent occurrences of misconduct." />
           <BodyText text="One way may be to suspend the account of the defaulting driver if the payment confirmation does not match the agreed fare and the responsiveness of the virtual customer service systems could better solve this."/>
         </section>
-          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/fzxjm4ihqmxwean6r0gj.png" alt="Screen showing quick support options"/>
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/fzxjm4ihqmxwean6r0gj.png" alt="Screen showing quick support options"/>
 
         <section>
           <Subheader text="Suggesting that riders tip their drivers for trips that take longer than expected." />
           <BodyText text="Quick options for riders to leave a tip for their drivers and prompts for drivers to confirm the receipt. The confirmation action was included in case the tipping metrics need to be monitored."/>
         </section>
-          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/e1wt6kc6nlsqbyf2cbbr.png" alt="screen showing tip"/>
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/e1wt6kc6nlsqbyf2cbbr.png" alt="screen showing tip"/>
 
         <section>
           <Subheader text="Visual cues for driver and rider location" />
           <BodyText text="Although this may be best handled and as an engineering issue but using visual cues to denote available drivers close to the searching rider (probably car icons on the map) alongside providing appropriate feedback with why there may be a delay in finding drivers for their trip."/>
         </section>
-          <ImgLarge style={{objectFit:"contain"}} src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/qzhzqsuckkca7drwwko4.gif" alt="screen showing driver location"/>
+          <ImgLarge style={{objectFit:"contain"}} src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/qzhzqsuckkca7drwwko4.gif" alt="screen showing driver location"/>
 
         <section>
-          <Subheader text="How success was measured" />
-          <BodyText text="Although the tipping rate can only be measured via the live product through an A/B test it would be interesting to see the extent to which one modal influences decision-making in this context. "/>
-          <BillboardText text="The average time taken to complete tasks was cut down by 36.1% (6.6s)" />
+          <BillboardText text="How success was measured" />
+          <BodyText text="Although the tipping rate can only be measured via the live product through an A/B test, it would have been interesting to see the extent to which one modal influences decision-making in this context. "/>
+          <Subheader text="The average time taken to complete tasks was cut down by 36.1% (6.6s)" />
         </section>
 
         <section>
-          <Subheader text="Reflections" />
+          <BillboardText text="Reflections" />
           <BodyText text="I was thrilled with booking and taking trips just to have conversations with drivers. They were open to speaking about their experiences and I reckon it was the best part for me while finding needs and pain points. 
           <br><br>In conclusion, research only breeds more research because I still believe conducting more usability tests could reveal more insights."/>
         </section>       
 
         <section>
-          <Subheader text="Prototype for booking a ride" />
+          <BillboardText text="Prototype for booking a ride" />
           <BodyText text="Try it out to see how it works." />
           <iframe src='https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fegv90JmwJgEWvLjheJzwrF%2FInDriver%3Fnode-id%3D46%253A195%26scaling%3Dscale-down%26page-id%3D1%253A3%26starting-point-node-id%3D46%253A195' />
         </section> 

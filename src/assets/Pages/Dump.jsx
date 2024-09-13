@@ -40,7 +40,7 @@ function Dump(){
               onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
             /> */}
 
-            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
               titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
               type="Product Design"
@@ -48,7 +48,7 @@ function Dump(){
               onClick={()=>{navigate("/casestudies/Bookateria")}} 
             />
 
-            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
               titleLg="Crafting a palatable learning platform for cooking beginners"
               titleSm="Spiced Up!"
               type="Product Design"

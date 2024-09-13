@@ -740,7 +740,7 @@ footer{
 
 .casestudy_imglarge{
     width:80vw;
-    height:calc(80vw / (16/9));
+    height:calc(80vw / (16/9) + 16px);
     overflow:hidden;
     border-radius:32px;
     img{
@@ -749,6 +749,14 @@ footer{
         background: #000000; //temp
         object-fit: cover;
     }
+    // p{
+    //     text-align: center;
+    //     position: absolute;
+    //     color: #8C8C8C;
+    //     margin: auto;
+    //     padding-top: 4px;
+    //     width: inherit;
+    // }
 }
 
 .casestudy_bodytext{
