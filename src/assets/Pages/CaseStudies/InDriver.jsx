@@ -55,7 +55,7 @@ function InDriver(){
             role:'Product Designer',
             type:"UX/Product Design",
             duration:"3 Weeks",
-            title:"Fixing User Adoption Issues on InDriver"
+            title:"Improving User Adoption on InDriver"
         }}
         />
 
@@ -72,10 +72,10 @@ function InDriver(){
         {/* <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739827/My%20Portfolio/jgcqhr4vprapeu2rpr4u.jpg" img1alt="fromt view of various yellow taxi cabs in lagos state" img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1715739832/My%20Portfolio/uefuczcbxdmg003e6dvb.jpg" img2alt="side view of a yellow taxi in lagos state, the taxi is in motion"/> */}
 
         <section>
-          <BillboardText text="What issues affect the adoption and usage of InDriver among commuters?"/>
+          <BillboardText text="What Issues Affect the Adoption and Usage of InDriver Among Commuters?"/>
           <BodyText
-              text="I started by assuming they were safety and trust issues. There have been numerous breaches to safety reported by users of Bolt and Uber in Nigeria. however, there hasn't been many by InDriver users. 
-              <br/>Could this also be a result of the relatively small user base or an inauthentic looking interface? <br/> <br/> We needed to discover more, and validate these assumptions"
+              text="I began by considering safety and trust as potential concerns. Numerous safety breaches have been reported by users of Bolt and Uber in Nigeria; however, there have been significantly fewer incidents reported by InDriver users.
+              Could this be due to InDriver’s relatively small user base or perhaps the platform's less polished interface?<br/><br/>However, we needed to investigate further to validate these assumptions."
           />
         </section>
 
@@ -100,7 +100,7 @@ function InDriver(){
         <section>
           <Subheader text="Competitive Analysis"/>
           <BodyText
-              text="The goal of this phase was to compare the core features with the two other main competitors for evidence on where InDriver stands among them in terms of completeness or where it has an edge over them, and disover opportunities for improvement by including or suggest essential features that may have been omitted.
+              text="The goal of this phase was to compare InDriver’s core features with those of its two main competitors. This comparison would provide insights into where InDriver stands in terms of feature completeness or where it has a competitive edge. Additionally, the analysis would help identify opportunities for improvement by suggesting or including essential features that may have been overlooked.
               </br></br>The study uncovered the need for clear distinction between Driver and passenger onboarding in the application since both are handled in the same application. It also revealed that trip history was missing, which could pose a problem in tracking past trips and drivers in support evidence cases"
           />
         </section>
@@ -183,7 +183,7 @@ function InDriver(){
               <li>Taking too much time to find available drivers and other GPS issues.</li>
             </ul>
             
-            Users rarely get any support for errors with locating drivers or inappropriate driver behaviour and fixed fares become a detriment to the drivers' profit when the time taken for a trip is longer than usual.
+            Users rarely receive support when facing issues such as locating drivers or dealing with inappropriate driver behavior. Additionally, fixed fares can negatively impact drivers' profits, especially when trips take longer than expected.
             "
           />
         </section>
@@ -193,11 +193,11 @@ function InDriver(){
           <BodyText text="Since there is a limit to the customer-related issues that can be solved by virtually contacting support, a physical support center, which is presently unavailable in Nigeria, will be important for handling more serious customer reports as there is closer human contact."/>
         </section>
         
-          <Subheader text="In-app calling. This way, it is easier to preserve rider anonymity." />
+          <Subheader text="In-app calling to easily ensure rider anonymity." />
           <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739828/My%20Portfolio/fcn8acsvpqljlk9ytps6.png" alt="screenshot showing in app calling feature"/>
 
         <section>
-          <Subheader text="Improving customer support and how driver misconduct is handled." />
+          <Subheader text="Improving customer support and driver misconduct handling." />
           <BodyText text="One way may be to suspend the account of the defaulting driver if the payment confirmation does not match the agreed fare and the responsiveness of the virtual customer service systems could better solve this."/>
         </section>
 
@@ -215,20 +215,20 @@ function InDriver(){
 
         <section>
           <Subheader text="Visual cues for driver and rider location" />
-          <BodyText text="Although this may be best handled and as an engineering issue but using visual cues to denote available drivers close to the searching rider (probably car icons on the map) alongside providing appropriate feedback with why there may be a delay in finding drivers for their trip."/>
+          <BodyText text="Although this may be best handled as an engineering issue but using visual cues to indicate available drivers close to the searching rider (probably car icons on the map) alongside providing appropriate feedback with why there may be a delay in finding drivers for their trip."/>
         </section>
           <ImgLarge style={{objectFit:"contain"}} src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/qzhzqsuckkca7drwwko4.gif" alt="screen showing driver location"/>
 
         <section>
           <BillboardText text="How success was measured" />
-          <BodyText text="Although the tipping rate can only be measured via the live product through an A/B test, it would have been interesting to see the extent to which one modal influences decision-making in this context. "/>
+          <BodyText text="Although, the tipping rate can only be measured via the live product through an A/B test, it would have been interesting to see the extent to which one modal influences decision-making in this context. "/>
           <Subheader text="The average time taken to complete tasks was cut down by 36.1% (6.6s)" />
         </section>
 
         <section>
           <BillboardText text="Reflections" />
-          <BodyText text="I was thrilled with booking and taking trips just to have conversations with drivers. They were open to speaking about their experiences and I reckon it was the best part for me while finding needs and pain points. 
-          <br><br>In conclusion, research only breeds more research because I still believe conducting more usability tests could reveal more insights."/>
+          <BodyText text="I thoroughly enjoyed booking and taking trips, primarily to engage in conversations with drivers. They were open to sharing their experiences, and for me, this was the most rewarding part of identifying their needs and pain points. 
+          </br></br>In conclusion, research often leads to further exploration. I believe that conducting additional usability tests could uncover even more valuable insights."/>
         </section>       
 
         <section>

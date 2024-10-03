@@ -54,15 +54,15 @@ function WorkoutTracker(){
       <CaseStudyInfo props={{
           year:'2023',
           role:'Product Designer',
-          duration:"2 Weeks",
+          duration:"5 Weeks",
           type:'Product Design',
-          title:"Simple way to keep track of workout routines"
+          title:"Keeping track of Workout Routines with Ease"
       }}
       />
 
       <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png" alt="cover image" />
       <BodyText
-          text="We needed a small, Web-based lightweight application that logs and tracks workout statistics, that would transform into a progressive web application or a cross-platform mobile application."
+          text="We needed a small, Web-based lightweight application that logs and tracks workout statistics, that will transform into a progressive web application or a cross-platform mobile application."
       />
       <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274158/My%20Portfolio/Workout%20Tracker/Workout_Tracker-1.png" alt="main app" />
 
@@ -72,7 +72,7 @@ function WorkoutTracker(){
         <Subheader text="Who is it for?"/>
         <BodyText
             text="Fitness Enthusiasts and budding Fitness Enthusiasts, and this will mean they would have some experience with the vocabulary and terminology: “reps”, and “sets” do not sound alien,
-            and they are eager to learn new terms and techniques invoolved in exercising and fitness in general"
+            and they are eager to learn new terms and techniques involved in exercising and fitness in general"
         />
       </section>
       <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274160/My%20Portfolio/Workout%20Tracker/Workout_Tracker-5.png" alt="glossary within the application" />
@@ -80,7 +80,7 @@ function WorkoutTracker(){
       <section>
         <Subheader text="What do they use now?"/>
         <BodyText
-            text="I explored and tested existing applications and workout trackers to discover the simplest of their forms and functions. Top of the list was Strong and Hevy.
+            text="I explored and tested existing applications and workout trackers to discover the simplest of their forms and functions. Top of the list was 'Strong' and 'Hevy'.
             </br>While some of these platforms have features to suggest routines, weights and so on, the intent for this tracker is simply to help users take logs without a paid plan or subscription. "
         />
       </section>
@@ -89,17 +89,23 @@ function WorkoutTracker(){
       <section>
         <Subheader text="The Challenge"/>
         <BodyText
-            text="To make It easier for fitness enthusiasts and those slowly transitioning into enthusiasts to keep track of their workouts in flexible time (ie: realtime or later). 
+            text="To make it easier for fitness enthusiasts and those slowly transitioning into enthusiasts to keep track of their workouts in flexible time (ie: realtime or later). 
 
             </br></br>
             The goals were to:
-            </br>Ensure the tracker is not too different from existing trackers, but more minimalist.
-            </br>Make it easy to log multiple sets of workouts in seconds. 
+            <ul>
+              <li>Ensure the tracker is not too different from existing trackers, but more minimalist.</li>
+              <li>Make it easy to log multiple sets of workouts in seconds.</li>
+              <li>Make it easy for new fitness entusiasts to learn new terms.</li>
+            </ul>
             
-            </br></br>To achieve this, we:
-            </br>Used minimal Visual elements, even down to colour, keeping it mainly grayscale to imitate pen and whiteboard and marker you’d find in the gym.
-            </br>Provided a list of workouts to select from, even helping the user learn routine names.
-            </br>Categorised routines by type to keep them organized and neat"
+            </br>To achieve this, we:
+            <ul>
+              <li>Used minimal Visual elements, even down to colour, keeping it mainly grayscale to imitate pen and whiteboard and marker you’d find in the gym.</li>
+              <li>Provided a list of workouts to select from, even helping the user learn routine names.</li>
+              <li>Provided a glossary for terms and their definitions.</li>
+              <li>Categorised routines by type to keep them organized and neat.</li>
+            </ul>"
         />
       </section>
       <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274158/My%20Portfolio/Workout%20Tracker/Workout_Tracker-3.png" img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1718274164/My%20Portfolio/Workout%20Tracker/Workout_Tracker-4.png" img1alt="tracker" img2alt="dropdown list" />

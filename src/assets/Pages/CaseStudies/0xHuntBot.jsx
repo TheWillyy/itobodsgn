@@ -55,23 +55,34 @@ function HuntBot(){
             role:'UI Designer',
             type:"Web UI and Motion Design",
             duration:"2 Days",
-            title:"Marketing Website for an on-chain analysis tool"
+            title:"Crafting a Marketing Website for an On-Chain Analysis Tool"
         }}
         />
 
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717886600/My%20Portfolio/0xHuntBot.png" alt="Shots of Website"/>
 
-        <BodyText
-            text="With an incredibly short deadline, I was tasked to design a catchy website for a web3 tool.
-            </br> It earned me the opportunity to explore existing ideas and put a story together as quickly as possible within th constraint of time.
-            
-            </br></br>Another challenge of note was the learning curve involved in using Rive as an animation tool for the product logo/mascot for the first time on a live project."
-        />
+        <section>
+          <BillboardText text="Marketing the Evolution of Blockchain Exploration"/>
+          <BodyText
+              text="The primary objective was to create a catchy website that would capture the essence of the Web3 tool, 0xHuntBot, while also ensuring quick completion. In addition, I needed to incorporate an animated product logo/mascot, which added complexity to the project.
+              </br></br> To achieve this, I drew inspiration from existing ideas and trends in the Web3 space to build a cohesive narrative for the website, and also overcome the learning curve of using Rive&emdash;an animation tool I was working with for the first time, to deploy assets to a live project."
+              />
+        </section>
 
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1727961509/My%20Portfolio/0xHuntBot%20Section.gif" alt="shots of section" />
+
+        <section>
+          <BillboardText text="Outcome"/>
+          <BodyText
+              text="I quickly gathered design ideas and learned Rive to animate the mascot, creating a compelling website. Despite the tight deadline, I delivered an interactive site on time, using web UI animation and interaction design to convey the concept effectively. This project sharpened my skills and boosted my expertise in live animations."
+              />
+        </section>
+        
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/video/upload/q_auto:low/v1717766209/Screen_Recording_Sept_15.gif" alt="shots of mascot" />
 
+
         <BodyText
-            text="I worked alongside Bolarinwa Owuogba, who was the Web developer on the project and assisted in design critique."
+            text="I worked alongside <a style='color:#000000; font-decoration:none;' href='https://linkedin.com/in/bolarinwa-owuogba-12952816a', '_blank'> Bolarinwa Owuogba </a>, who was the Web developer on the project and assisted in design critique."
         />
 
         <BillboardText link

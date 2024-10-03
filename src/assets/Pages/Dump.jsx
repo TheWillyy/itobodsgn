@@ -59,6 +59,7 @@ function Dump(){
           </div>
 
           <div className='dump_items'>
+            <WorkItem dump coverimg="https://d2wx6rahy8yxgr.cloudfront.net/fit-in/2560x0/filters:format(webp)/filters:quality(100)/17c5773f-6e32-4445-ac6e-e23918223339-Buttonss.png" />
             <WorkItem dump coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717673453/dash.png" />
             <WorkItem dump coverimg="https://layers-uploads-prod.s3.eu-west-2.amazonaws.com/15115b8c-e230-48b3-8299-6d1a8ebaafba-App-Folder.gif"/>
             <WorkItem dump coverimg="https://cdn.dribbble.com/users/3236646/screenshots/20374192/media/7b51317be6866d66ad55c7ebd710674e.gif"/>

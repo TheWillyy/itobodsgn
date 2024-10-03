@@ -121,23 +121,23 @@ function Home(){
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/casestudies/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
-                    titleLg='Fixing User Adoption Issues on InDriver'
-                    type="Product Design"
+                    titleLg='Improving User Adoption on InDriver'
+                    type="Product/UX Design"
                     year="2021"
                 />   
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/c_scale,q_auto:low,w_1056/v1717886600/My%20Portfolio/0xHuntBot.png"
                     onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
                     titleSm='0xHuntBot'
-                    titleLg='Marketing Website for an on-chain analysis tool'
-                    type="Web UI & Motion Design"
+                    titleLg='Marketing Website for an On-Chain analysis tool'
+                    type="Web Design (UI & Motion)"
                     year="2023"
                 />  
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
-                    type="Product Design"
+                    type="Product/UX Design"
                     year="2023"
-                    titleLg="Simple way to keep track of workout routines"
+                    titleLg="Keeping track of Workout Routines with Ease"
                     titleSm="Workout Logger"
                     onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
                 />    
@@ -145,13 +145,13 @@ function Home(){
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718280479/My%20Portfolio/portfolio_cover.png" 
                     titleSm='itobo.xyz (shameless plug, duh)'
                     titleLg='Portfolio Website for Williams Eni'
-                    type="Web UI, Motion Design & Dev"
+                    type="Web Design (UI, Motion & Dev)"
                     year="2024"
                     onClick={()=>{navigate("/casestudies/Itobodotxyz")}}
                 />            
 
                 <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
-                    type="Brand & UI Design"
+                    type="Art Direction & Brand Design"
                     year="2024"
                     titleSm="API Conference Lagos"
                 />
