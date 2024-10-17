@@ -43,7 +43,7 @@ function Dump(){
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
               titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
-              type="Product Design"
+              type="Product/UX Design"
               year="2021"
               onClick={()=>{navigate("/casestudies/Bookateria")}} 
             />
@@ -51,9 +51,17 @@ function Dump(){
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
               titleLg="Crafting a palatable learning platform for cooking beginners"
               titleSm="Spiced Up!"
-              type="Product Design"
+              type="Product/UX Design"
               year="2020"
               onClick={()=>{navigate("/casestudies/SpicedUp")}} 
+            />
+
+            <WorkItem coverimg=""
+              titleLg="A Seamless way for Fintech App Users to Counter Poor Internet"
+              titleSm="SeamlessUSSD"
+              type="Product/UX Design"
+              year="2024"
+              onClick={()=>{navigate("/casestudies/SeamlessUSSD")}} 
             />
 
           </div>

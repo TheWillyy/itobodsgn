@@ -15,6 +15,7 @@ import { Analytics } from '@vercel/analytics/react';
 import MyPortfolio from './assets/Pages/CaseStudies/MyPortfolio';
 import WorkoutTracker from './assets/Pages/CaseStudies/WorkoutTracker';
 import APIConf from './assets/Pages/CaseStudies/APIConf';
+import SeamlessUSSD from './assets/Pages/CaseStudies/SeamlessUSSD';
 
 function App() {
   const location = useLocation();
@@ -41,6 +42,7 @@ function App() {
           <Route path="/casestudies/WorkoutTracker" element={<WorkoutTracker/>} key="cs1"/>
           <Route path="/casestudies/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
           <Route path="/casestudies/APIConf2024" element={<APIConf/>} key="cs1"/>
+          <Route path="/casestudies/SeamlessUSSD" element={<SeamlessUSSD/>} key="cs1"/>
         </Routes>
         <Analytics/>
       </AnimatePresence>
