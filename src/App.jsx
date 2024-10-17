@@ -14,6 +14,7 @@ import { AnimatePresence } from "framer-motion";
 import { Analytics } from '@vercel/analytics/react';
 import MyPortfolio from './assets/Pages/CaseStudies/MyPortfolio';
 import WorkoutTracker from './assets/Pages/CaseStudies/WorkoutTracker';
+import APIConf from './assets/Pages/CaseStudies/APIConf';
 
 function App() {
   const location = useLocation();
@@ -39,6 +40,7 @@ function App() {
           <Route path="/casestudies/0xHuntBot" element={<HuntBot/>} key="cs1"/>
           <Route path="/casestudies/WorkoutTracker" element={<WorkoutTracker/>} key="cs1"/>
           <Route path="/casestudies/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
+          <Route path="/casestudies/APIConf2024" element={<APIConf/>} key="cs1"/>
         </Routes>
         <Analytics/>
       </AnimatePresence>

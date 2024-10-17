@@ -766,6 +766,15 @@ footer{
     font-size: 18px;
     color:#1f1f1f;
     // padding: 64px 0;
+    a{
+        color:#B2B2B2;
+        text-decoration:none;
+        transition: var(--transition3s);
+        &:hover{
+            color:#1F1F1F;
+            transition: var(--transition3s);
+        }
+    }
 }
 .casestudy_billboardtext{
     width:700px;

@@ -150,10 +150,12 @@ function Home(){
                     onClick={()=>{navigate("/casestudies/Itobodotxyz")}}
                 />            
 
-                <WorkItem comingsoon coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
                     type="Art Direction & Brand Design"
                     year="2024"
                     titleSm="API Conference Lagos"
+                    titleLg='Leading Art Direction for the Pioneer Edition of API Conference Lagos 2024.'
+                    onClick={()=>{navigate("/casestudies/APIConf2024")}}
                 />
 
             </div>
@@ -162,7 +164,8 @@ function Home(){
                 <section className='work_history'>
                     <p className='writing_title'>Professional Work History</p>
                     <p><span>Now</span>Open to New Opportunities</p>
-                    <p><span>Now</span>Product Designer &#x2192; TCI, UK</p>
+                    <p><span>Now</span>Creative Web & Interaction Designer &#x2192; DraftOne</p>
+                    <p><span>2021 - 2024</span>Product Designer &#x2192; TCI, UK</p>
                     <p><span>2022 - 2023</span>Founding Product Designer &#x2192; SourceMyGadgets, NG</p>
                     <p><span>2019</span>UI Designer &#x2192; Malon Global Tech, NG</p>
                 </section>
@@ -186,9 +189,9 @@ function Home(){
                 <StickyNote text="
                     <ul>
                     <li><b>Todo:</b></li>
-                        <li>Complete Passion Projects</li>
-                        <li>Experiment for tech event</li>
-                        <li>Doomscrolling</li>
+                        <li>Survive the horrors</li>
+                        <li>Complete 30 Days UI Components</li>
+                        <li>Experiment Graphic Desgign Styles</li>
                     </ul>
                 "
             />

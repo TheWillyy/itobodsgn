@@ -167,7 +167,7 @@ function InDriver(){
               <li>Quick options for reporting based on the most frequent occurrences of misconduct.</li>
               <li>Suggesting that riders tip their drivers for trips that take longer than expected.</li>
               <li>Visual cues for driver and rider location</li>
-            <ul/>
+            </ul>
             "
           
           />
@@ -203,7 +203,6 @@ function InDriver(){
 
         <section>
           <Subheader text="Quick options for reporting based on the most frequent occurrences of misconduct." />
-          <BodyText text="One way may be to suspend the account of the defaulting driver if the payment confirmation does not match the agreed fare and the responsiveness of the virtual customer service systems could better solve this."/>
         </section>
           <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1715739832/My%20Portfolio/fzxjm4ihqmxwean6r0gj.png" alt="Screen showing quick support options"/>
 

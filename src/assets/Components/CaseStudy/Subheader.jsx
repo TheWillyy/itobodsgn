@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 function Subheader({text}){
 
   function toSentenceCase(str) {
-    const smallWords = ["a", "an", "the", "and", "but", "or", "for", "nor", "on", "at", "to", "by", "it", "was"];
+    const smallWords = ["a", "an", "the", "and", "but", "or", "of", "for", "nor", "on", "at", "to", "by", "it", "was", "xyz"];
     
     // Split into sentences by looking for sentence-ending punctuation (., !, ?)
     let sentenceCased = str.replace(/([.!?])\s*(?=[a-zA-Z])/g, "$1|").split("|");
@@ -30,7 +30,7 @@ function Subheader({text}){
     });
 
     // Rejoin all sentences into a single string
-    return processedSentences.join(". ");
+    return processedSentences.join(" ");
   }
 
   return(
