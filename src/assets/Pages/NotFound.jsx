@@ -21,7 +21,7 @@ function NotFound(){
       <Button text="Go Back Home" onClick={()=>{navigate("/")}}/>
 
     <div className='credits_404'>
-      <p>Say a thank you to Azur, Stans, Seunpaul, Femi, Brub, zik, my bebisss, 'mo, omolxre, and miss oddbod.
+      <p>Say a thank you to Azur, Stans, Seunpaul, Oluwafemi, Brub, zik, titilayo, 'mo, omolxre, and miss oddbod for their fantastic support.
         <br/>Made with a fill of bread, lots of tea, in hyperfixation and out of spite,
         <br/>Against all Odds–––gegen alle widrigkeiten
       </p>

@@ -775,6 +775,9 @@ footer{
             transition: var(--transition3s);
         }
     }
+    ul{
+        margin:8px;
+    }
 }
 .casestudy_billboardtext{
     width:700px;
@@ -805,7 +808,7 @@ footer{
 .casestudy section {
     display:flex;
     flex-direction:column;
-    gap:16px;
+    gap:24px;
     align-items:flex-start;
     text-align: left;
     max-width:700px;
@@ -813,6 +816,15 @@ footer{
     p{
         padding:0;
         margin:0;
+    }
+    & > section h1, h2, h3, h4, h5, h6, p{
+        margin:0;
+    }
+    & > section{
+        gap:8px;
+    }
+    img{
+        // position:fixed;
     }
 }
 .casestudy iframe{

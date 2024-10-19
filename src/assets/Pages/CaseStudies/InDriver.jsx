@@ -244,7 +244,7 @@ function InDriver(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="">Making it easier to find and share study material</a></span></h1>
+          <h1>Read Next: <br/><span><a href="/work/Bookateria">Making it easier to find and share study material</a></span></h1>
           {/* can we automate the titles? */}
           <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}

@@ -40,12 +40,20 @@ function Dump(){
               onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
             /> */}
 
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/c_scale,q_auto:low,w_1056/v1717886600/My%20Portfolio/0xHuntBot.png"
+              onClick={()=>{navigate("/work/0xHuntBot")}} 
+              titleSm='0xHuntBot'
+              titleLg='Marketing Website for an On-Chain analysis tool'
+              type="Web Design (UI & Motion)"
+              year="2023"
+            />  
+
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717634007/My%20Portfolio/Bookateria/Bookateria_Cover.png"
               titleLg="Making it easier to find and share study material"
               titleSm="Bookateria"
               type="Product/UX Design"
               year="2021"
-              onClick={()=>{navigate("/casestudies/Bookateria")}} 
+              onClick={()=>{navigate("/work/Bookateria")}} 
             />
 
             <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717633643/My%20Portfolio/SpicedUp%21/Spiced_Up_Image.png"
@@ -53,15 +61,7 @@ function Dump(){
               titleSm="Spiced Up!"
               type="Product/UX Design"
               year="2020"
-              onClick={()=>{navigate("/casestudies/SpicedUp")}} 
-            />
-
-            <WorkItem coverimg=""
-              titleLg="A Seamless way for Fintech App Users to Counter Poor Internet"
-              titleSm="SeamlessUSSD"
-              type="Product/UX Design"
-              year="2024"
-              onClick={()=>{navigate("/casestudies/SeamlessUSSD")}} 
+              onClick={()=>{navigate("/work/SpicedUp")}} 
             />
 
           </div>

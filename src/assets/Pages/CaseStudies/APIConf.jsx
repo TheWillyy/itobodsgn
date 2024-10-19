@@ -55,7 +55,8 @@ function APIConf(){
             role:'Art Direction, Brand Design, Web Design',
             type:"Art Direction & Brand Design",
             duration:"11 Months",
-            title:"Leading Art Direction for the Pioneer Edition of API Conference Lagos 2024."
+            title:"Leading Art Direction for the Pioneer Edition of API Conference Lagos 2024.",
+            contributors: "Gbadebo Bello, Sodiq Akinjobi, Emmanuel Chukwurah, Joshua Omobola, + More"
         }}
         />
 
@@ -71,9 +72,10 @@ function APIConf(){
               "
             />
         </section>
+        
 
         <section>
-          <Subheader text="Discovering People"/>
+          <BillboardText text="Discovering the People in API Expertise"/>
 
           <BodyText
               text="
@@ -86,7 +88,7 @@ function APIConf(){
         </section>
 
         <section>
-        <Subheader text="What Were Their Needs?"/>
+        <Subheader text="What were their expectations for the conference?"/>
           <BodyText
               text="Tuning into what attendees were really looking for to make sure they got the most out of the event.
               <ul>
@@ -156,8 +158,14 @@ function APIConf(){
           />
         </section>
 
-        <BillboardText text="2000+ registrations, 600+ attendees. 16 awesome sessions and workshops, and 23 amazing speakers! See you again soon!" />
+        <BillboardText text="This resulted in 2000+ registrations, 600+ attendees. 16 awesome sessions and workshops, and 23 amazing speakers! See you again at APIConf 2025!" />
 
+        <section>
+          <Subheader text="Thanks to the contributors!" />
+          <BodyText
+              text=""
+          />
+        </section>
         {/* <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1727961509/My%20Portfolio/0xHuntBot%20Section.gif" alt="shots of section" /> */}
 
       
@@ -167,7 +175,7 @@ function APIConf(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="/casestudies/InDriver">Tackling usage obstacles on InDriver as a Digital Hailing Service</a></span></h1>
+          <h1>Read Next: <br/><span><a href="/work/InDriver">Tackling usage obstacles on InDriver as a Digital Hailing Service</a></span></h1>
           {/* can we automate the titles? */}
           <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}

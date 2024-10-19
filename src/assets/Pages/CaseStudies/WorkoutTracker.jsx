@@ -134,7 +134,7 @@ function WorkoutTracker(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="/casestudies/InDriver">Tackling usage obstacles on InDriver as a Digital Hailing Service</a></span></h1>
+          <h1>Read Next: <br/><span><a href="/work/InDriver">Tackling usage obstacles on InDriver as a Digital Hailing Service</a></span></h1>
           {/* can we automate the titles? */}
           <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}

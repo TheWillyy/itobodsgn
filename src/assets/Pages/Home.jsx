@@ -119,52 +119,51 @@ function Home(){
             <div className='work'>   
                 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
-                    onClick={()=>{navigate("/casestudies/InDriver")}} 
+                    onClick={()=>{navigate("/work/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
                     titleLg='Improving User Adoption on InDriver'
                     type="Product/UX Design"
                     year="2021"
                 />   
 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/c_scale,q_auto:low,w_1056/v1717886600/My%20Portfolio/0xHuntBot.png"
-                    onClick={()=>{navigate("/casestudies/0xHuntBot")}} 
-                    titleSm='0xHuntBot'
-                    titleLg='Marketing Website for an On-Chain analysis tool'
-                    type="Web Design (UI & Motion)"
-                    year="2023"
-                />  
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729339844/My%20Portfolio/SeamlessUSSD/cover_ussd.png"
+                    titleLg="Integrating an offline alternative to online banking into fintech apps"
+                    titleSm="SeamlessUSSD"
+                    type="Product/UX Design"
+                    year="2024"
+                    onClick={()=>{navigate("/work/SeamlessUSSD")}} 
+                />
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718274157/My%20Portfolio/Workout%20Tracker/workout_cover.png"
                     type="Product/UX Design"
                     year="2023"
                     titleLg="Keeping track of Workout Routines with Ease"
                     titleSm="Workout Logger"
-                    onClick={()=>{navigate("/casestudies/WorkoutTracker")}} 
+                    onClick={()=>{navigate("/work/WorkoutTracker")}} 
                 />    
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
+                    type="Art Direction & Brand Design"
+                    year="2024"
+                    titleSm="API Conference Lagos"
+                    titleLg='Leading Art Direction for the Pioneer Edition of API Conference Lagos 2024'
+                    onClick={()=>{navigate("/work/APIConf2024")}}
+                />
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1718280479/My%20Portfolio/portfolio_cover.png" 
                     titleSm='itobo.xyz (shameless plug, duh)'
                     titleLg='Portfolio Website for Williams Eni'
                     type="Web Design (UI, Motion & Dev)"
                     year="2024"
-                    onClick={()=>{navigate("/casestudies/Itobodotxyz")}}
+                    onClick={()=>{navigate("/work/Itobodotxyz")}}
                 />            
-
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1717766208/apiconf_cover.png"
-                    type="Art Direction & Brand Design"
-                    year="2024"
-                    titleSm="API Conference Lagos"
-                    titleLg='Leading Art Direction for the Pioneer Edition of API Conference Lagos 2024.'
-                    onClick={()=>{navigate("/casestudies/APIConf2024")}}
-                />
-
             </div>
 
             <div className='writing'>
                 <section className='work_history'>
                     <p className='writing_title'>Professional Work History</p>
                     <p><span>Now</span>Open to New Opportunities</p>
-                    <p><span>Now</span>Creative Web & Interaction Designer &#x2192; DraftOne</p>
+                    <p><span>Now</span>Creative Product & Interaction Designer &#x2192; DraftOne, WW</p>
                     <p><span>2021 - 2024</span>Product Designer &#x2192; TCI, UK</p>
                     <p><span>2022 - 2023</span>Founding Product Designer &#x2192; SourceMyGadgets, NG</p>
                     <p><span>2019</span>UI Designer &#x2192; Malon Global Tech, NG</p>
@@ -182,6 +181,11 @@ function Home(){
                     <a href="https://www.notion.so/Heuristic-Evaluation-Report-Template-cada949af7264ffba51308813dc1546c" target='_blank'>Heuristic Evaluation Report Template &#x2197; </a>
                     <a href="https://www.notion.so/DSC-UI-UX-Design-Study-Group-ce9f1b9e8ec740daa7d33fff315dec07" target='_blank'>DSC UI/UX Study Group Starter Resources &#x2197; </a>
                 </section>
+                
+                <section>
+                    <p className='writing_title'>Honorable Mentions and Featured Work</p>
+                    <a href="techmoonshot.com/2024/07/15/api-conference-lagos-2024-debuts-as-nigerias-first-dedicated-api-event" target='_blank'>[Mention] API Conference Lagos 2024 Debuts as Nigeria’s First Dedicated API Event - By Techmoonshot &#x2197; </a>
+                </section>
             </div>
 
             <div className='work2'>
@@ -190,8 +194,8 @@ function Home(){
                     <ul>
                     <li><b>Todo:</b></li>
                         <li>Survive the horrors</li>
-                        <li>Complete 30 Days UI Components</li>
-                        <li>Experiment Graphic Desgign Styles</li>
+                        <li>Complete 15 Days UI Components</li>
+                        <li>Experiment Graphic Design Styles</li>
                     </ul>
                 "
             />
@@ -238,6 +242,7 @@ function Home(){
                     <div className='links'>
                         <a href="https://linkedin.com/in/williamseni" target="blank">LinkedIn &#x2197;  </a>
                         <a href="https://layers.to/itxbo" target="blank">Layers &#x2197;  </a>
+                        <a href="https://are.na/williams-eni" target="blank">Arena &#x2197;  </a>
                         <a href="https://dribbble.com/thewillyy" target="blank">Dribbble &#x2197;  </a>
                         <a href="https://twitter.com/itxbo" target="blank">Twitter &#x2197;  </a>
 

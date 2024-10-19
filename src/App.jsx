@@ -35,14 +35,14 @@ function App() {
           <Route path="*" element={<NotFound/>}/>
           <Route path="/" element={<Home/>} key="home"/>
           <Route path="/dump" element={<Dump/>} key="dump"/>
-          <Route path="/casestudies/InDriver" element={<InDriver/>} key="cs1"/>
-          <Route path="/casestudies/Bookateria" element={<Bookateria/>} key="cs1"/>
-          <Route path="/casestudies/SpicedUp" element={<SpicedUp/>} key="cs1"/>
-          <Route path="/casestudies/0xHuntBot" element={<HuntBot/>} key="cs1"/>
-          <Route path="/casestudies/WorkoutTracker" element={<WorkoutTracker/>} key="cs1"/>
-          <Route path="/casestudies/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
-          <Route path="/casestudies/APIConf2024" element={<APIConf/>} key="cs1"/>
-          <Route path="/casestudies/SeamlessUSSD" element={<SeamlessUSSD/>} key="cs1"/>
+          <Route path="/work/InDriver" element={<InDriver/>} key="cs1"/>
+          <Route path="/work/Bookateria" element={<Bookateria/>} key="cs1"/>
+          <Route path="/work/SpicedUp" element={<SpicedUp/>} key="cs1"/>
+          <Route path="/work/0xHuntBot" element={<HuntBot/>} key="cs1"/>
+          <Route path="/work/WorkoutTracker" element={<WorkoutTracker/>} key="cs1"/>
+          <Route path="/work/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
+          <Route path="/work/APIConf2024" element={<APIConf/>} key="cs1"/>
+          <Route path="/work/SeamlessUSSD" element={<SeamlessUSSD/>} key="cs1"/>
         </Routes>
         <Analytics/>
       </AnimatePresence>

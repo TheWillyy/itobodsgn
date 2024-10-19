@@ -147,7 +147,7 @@ function Bookateria(){
         <p className='casestudy_thankyou'>Thank you for reading!</p>
 
         <div className='back-to-top'>
-          <h1>Read Next: <br/><span><a href="/casestudies/SpicedUp">Crafting a palatable learning platform for cooking beginners</a></span></h1>
+          <h1>Read Next: <br/><span><a href="/work/SpicedUp">Crafting a palatable learning platform for cooking beginners</a></span></h1>
           {/* can we automate the titles? */}
           <Button text="Back to Top" name="backtotop"
             onClick={scrollToTop}

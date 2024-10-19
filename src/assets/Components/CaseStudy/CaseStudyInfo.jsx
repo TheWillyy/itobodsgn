@@ -28,6 +28,14 @@ import { useEffect, useRef, useState } from 'react'
               <p>{props.duration}</p>
             </div> : null
           }
+
+          {props.contributors? 
+            <div>
+              <p>Contributors</p>
+              <p>{props.contributors}</p>
+            </div> : null
+          }
+          
         </div>
 
         <h1>{props.title}</h1>
