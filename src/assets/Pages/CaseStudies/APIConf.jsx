@@ -72,7 +72,9 @@ function APIConf(){
               "
             />
         </section>
-        
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729367621/My%20Portfolio/APIConf/Api_Conf_Photo_1.jpg" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265753/My%20Portfolio/APIConf/LinkedIn_Profile_Pic.jpg" img2alt="APIConf Cover"
+        />
 
         <section>
           <BillboardText text="Discovering the People in API Expertise"/>
@@ -86,6 +88,9 @@ function APIConf(){
               </ul>"
           />
         </section>
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265794/My%20Portfolio/APIConf/APIconflagos_Twitter_1.jpg" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729367012/My%20Portfolio/APIConf/cb14ac9c-61c0-4058-aba0-4ecda47f6651.png" img2alt="APIConf Cover"
+        />
 
         <section>
         <Subheader text="What were their expectations for the conference?"/>
@@ -108,6 +113,7 @@ function APIConf(){
           />
 
         </section>
+        
 
 
         <section>
@@ -126,12 +132,18 @@ function APIConf(){
           />
         </section>
 
-
         <section>
           <BillboardText text="What we achieved"/>
           <Subheader text="Early Concepts" />
+        </section>
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265752/My%20Portfolio/APIConf/Frame_104.jpg" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265755/My%20Portfolio/APIConf/logo_explorations.png" img2alt="APIConf Cover"
+        />
+        
+        
 
-          <Subheader text="Solutions" />
+        <section>
+          <Subheader text="Execution" />
           <BodyText
               text="
                 <li>I created a strong, easily identifiable brand identity with brand guidelines for contributors on the team to work with.</li>
@@ -143,6 +155,19 @@ function APIConf(){
               </ul>"
           />
         </section>
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265755/My%20Portfolio/APIConf/shirts_apiconf.png" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265755/My%20Portfolio/APIConf/more_explorations.png" img2alt="APIConf Cover"
+        />
+
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265750/My%20Portfolio/APIConf/IMG_6539.jpg" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265793/My%20Portfolio/APIConf/APIconflagos_photo.jpg" img2alt="APIConf Cover"
+        />
+
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729365567/My%20Portfolio/APIConf/website_sections_apiconf.png" alt="APIConf Cover"/>
+
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729366164/My%20Portfolio/APIConf/b7b8299c-e8b5-4798-ac63-e0fa69161fff.png" img1alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265794/My%20Portfolio/APIConf/APIconflagos_Twitter_2.jpg" img2alt="APIConf Cover"
+        />
 
 
         <section>
@@ -159,14 +184,21 @@ function APIConf(){
         </section>
 
         <BillboardText text="This resulted in 2000+ registrations, 600+ attendees. 16 awesome sessions and workshops, and 23 amazing speakers! See you again at APIConf 2025!" />
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729367622/My%20Portfolio/APIConf/Api_Conf_Photo_2.jpg" alt="APIConf Cover"/>
 
         <section>
-          <Subheader text="Thanks to the contributors!" />
+          <Subheader text="Thanks to my team and the Leads of the contributing teams!" />
           <BodyText
-              text=""
+              text=" <a href='https://www.linkedin.com/in/gbahdeyboh/' target='_blank'> Gbadebo Bello</a>, 
+              <a href='https://www.linkedin.com/in/geektutor' target='_blank'> Sodiq Akinjobi</a>,
+              <a href='https://www.linkedin.com/in/chukwuemekachukwurah/' target='_blank'> Emmanuel Chukwurah</a>,
+              <a href='https://www.linkedin.com/in/abdulmalik-atiku-25b599218/' target='_blank'> Atiku Omodolapo </a>,
+              <a href='https://www.linkedin.com/in/haastrup-adejoke-543665120/' target='_blank'> Haastrup Adejoke</a>,
+              <a href='https://www.linkedin.com/in/kohasummons/' target='_blank'> Joshua Omobola</a>
+              "
           />
         </section>
-        {/* <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1727961509/My%20Portfolio/0xHuntBot%20Section.gif" alt="shots of section" /> */}
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265799/My%20Portfolio/APIConf/APIconflagos_Twitter_5.jpg" alt="APIConf Cover"/>
 
       
       {/* ------------------------------------------- */}
