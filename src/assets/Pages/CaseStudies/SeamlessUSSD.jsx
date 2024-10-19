@@ -55,7 +55,7 @@ function SeamlessUSSD(){
             role:'Product Design',
             type:"Product/UX Design",
             duration:"2 Weeks",
-            title:"Integrating an offline alternative to online banking into fintech apps",
+            title:"Helping Fintech Apps Complete Transactions Offline",
             contributors:"Williams Eni, Emmanuel Akinde"
         }}
         />

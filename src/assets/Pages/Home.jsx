@@ -127,7 +127,7 @@ function Home(){
                 />   
 
                 <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729339844/My%20Portfolio/SeamlessUSSD/cover_ussd.png"
-                    titleLg="Integrating an offline alternative to online banking into fintech apps"
+                    titleLg="Helping Fintech Apps Complete Transactions Offline"
                     titleSm="SeamlessUSSD"
                     type="Product/UX Design"
                     year="2024"
