@@ -136,7 +136,7 @@ function APIConf(){
           <BillboardText text="What we achieved"/>
           <Subheader text="Early Concepts" />
         </section>
-        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265752/My%20Portfolio/APIConf/Frame_104.jpg" img1alt="APIConf Cover"
+        <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729442208/My%20Portfolio/APIConf/66ef78b6-2d88-43e8-9d84-78fd6b614d93.png" img1alt="APIConf Cover"
                   img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265755/My%20Portfolio/APIConf/logo_explorations.png" img2alt="APIConf Cover"
         />
         
@@ -166,7 +166,7 @@ function APIConf(){
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729365567/My%20Portfolio/APIConf/website_sections_apiconf.png" alt="APIConf Cover"/>
 
         <ImgSmall img1src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729366164/My%20Portfolio/APIConf/b7b8299c-e8b5-4798-ac63-e0fa69161fff.png" img1alt="APIConf Cover"
-                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729265794/My%20Portfolio/APIConf/APIconflagos_Twitter_2.jpg" img2alt="APIConf Cover"
+                  img2src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729441320/My%20Portfolio/APIConf/Apiconf_Tags.gif" img2alt="APIConf Cover"
         />
 
 
