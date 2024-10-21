@@ -163,7 +163,7 @@ function KYCDashboard(){
         </section>
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729493697/My%20Portfolio/KYC%20Dashboard/dashboard_metrics.png" alt="APIConf Cover"
         
-        caption="This is a short caption describing this image" />
+        caption="Section of dashboards hat shows useful metrics" />
 
         <section>
           <Subheader text="Controlling account Verifications" />
@@ -173,7 +173,7 @@ function KYCDashboard(){
           />
         </section>
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729494509/My%20Portfolio/KYC%20Dashboard/dashboard_review.png" alt="APIConf Cover"
-        caption="This is a short caption describing this image" />
+        caption="Pop-up with actions on customer documents" />
 
       
       {/* ------------------------------------------- */}
