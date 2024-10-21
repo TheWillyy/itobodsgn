@@ -64,6 +64,13 @@ function Dump(){
               onClick={()=>{navigate("/work/SpicedUp")}} 
             />
 
+            <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1729493698/My%20Portfolio/KYC%20Dashboard/dashboard_cover.png"
+              titleLg="Helping Businesses Manage Customer Verification"
+              titleSm="KYC Dashboard"
+              type="Product/UX Design"
+              year="2024"
+              onClick={()=>{navigate("/work/KYCDashboard")}} 
+                />
           </div>
 
           <div className='dump_items'>

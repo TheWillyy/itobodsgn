@@ -16,6 +16,7 @@ import MyPortfolio from './assets/Pages/CaseStudies/MyPortfolio';
 import WorkoutTracker from './assets/Pages/CaseStudies/WorkoutTracker';
 import APIConf from './assets/Pages/CaseStudies/APIConf';
 import SeamlessUSSD from './assets/Pages/CaseStudies/SeamlessUSSD';
+import KYCDashboard from './assets/Pages/CaseStudies/KYC Dashboard';
 
 function App() {
   const location = useLocation();
@@ -43,6 +44,7 @@ function App() {
           <Route path="/work/Itobodotxyz" element={<MyPortfolio/>} key="cs1"/>
           <Route path="/work/APIConf2024" element={<APIConf/>} key="cs1"/>
           <Route path="/work/SeamlessUSSD" element={<SeamlessUSSD/>} key="cs1"/>
+          <Route path="/work/KYCDashboard" element={<KYCDashboard/>} key="cs1"/>
         </Routes>
         <Analytics/>
       </AnimatePresence>
