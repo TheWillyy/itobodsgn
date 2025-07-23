@@ -112,7 +112,7 @@ function Home(){
                         <Button onClick={()=>{window.open("https://dribbble.com/thewillyy", "_blank")}} iconsrc={dribbble} alt="dribbble button" name="dribbble" />
                         <Button onClick={()=>{window.open("https://layers.to/itxbo", "_blank")}} iconsrc={layers} alt="layers button" name="layers" />
                     </div>
-                    <p>Updated 9 Sep</p>
+                    <p>Updated 1 Jul</p>
                 </div>
             </div>
 
