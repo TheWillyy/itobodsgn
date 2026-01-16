@@ -17,6 +17,8 @@ import WorkoutTracker from './assets/Pages/CaseStudies/WorkoutTracker';
 import APIConf from './assets/Pages/CaseStudies/APIConf';
 import SeamlessUSSD from './assets/Pages/CaseStudies/SeamlessUSSD';
 import KYCDashboard from './assets/Pages/CaseStudies/KYC Dashboard';
+import PocketPay from './assets/Pages/CaseStudies/PocketPay';
+import Coducate from './assets/Pages/CaseStudies/Coducate';
 
 function App() {
   const location = useLocation();
@@ -45,6 +47,9 @@ function App() {
           <Route path="/work/APIConf2024" element={<APIConf/>} key="cs1"/>
           <Route path="/work/SeamlessUSSD" element={<SeamlessUSSD/>} key="cs1"/>
           <Route path="/work/KYCDashboard" element={<KYCDashboard/>} key="cs1"/>
+          <Route path="/work/PocketPay" element={<PocketPay/>} key="cs1"/>
+          <Route path="/work/Coducate" element={<Coducate/>} key="cs1"/>
+          
         </Routes>
         <Analytics/>
       </AnimatePresence>

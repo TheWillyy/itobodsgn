@@ -118,7 +118,23 @@ function Home(){
 
             <div className='work'>   
                 
-                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1768564900/My%20Portfolio/pocketpay/pocketpaycover.png"
+                    onClick={()=>{navigate("/work/PocketPay")}} 
+                    titleSm='PocketPay'
+                    titleLg='Automating Bill Payments for Regular Savers'
+                    type="Product/UX Design"
+                    year="2025"
+                />   
+
+                <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/v1768565435/My%20Portfolio/coducate/coducate_cover.png"
+                    onClick={()=>{navigate("/work/Coducate")}} 
+                    titleSm='Coducate'
+                    titleLg='Eliminating Paper-Based Coding Exams'
+                    type="Product/UX Design"
+                    year="2025"
+                />   
+
+                    <WorkItem coverimg="https://res.cloudinary.com/dhlkiskhn/image/upload/q_auto:eco/v1717885433/faffa77f-59d6-4a35-b327-8022c576dd8d.png"
                     onClick={()=>{navigate("/work/InDriver")}} 
                     titleSm='Indriver (No Affiliation)'
                     titleLg='Improving User Adoption on InDriver'
