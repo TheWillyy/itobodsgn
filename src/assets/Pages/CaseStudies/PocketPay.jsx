@@ -85,6 +85,18 @@ function PocketPay(){
 
           <Subheader text="Many digital banking customers cannot split their expenses without manually documenting them, ridding them of a seamless experience" />
         </section>
+
+        <section>
+          <BodyText text="
+            <h3>User Pain Points</h3>
+            <ul>
+              <li>&quot;I'm constantly doing mental math to figure out what I can actually spend without screwing myself over later&quot; — Daniel, 23</li>
+              <li>&quot;Every month I'm manually calculating bills and transferring money around like it's my second job&quot; – Seyi, 26 </li>
+              <li>&quot;I never really know if the money in my account is truly mine to spend or already earmarked for something&quot; Amaka, 30</li>
+              <li>&quot;The apps I use help me send money but don't help me stay organized in the first place&quot; - Chukwudi, 21</li>
+            </ul>
+          "/>
+        </section>
           
         <section>
           <BillboardText text="Solution Strategy" />
@@ -93,6 +105,7 @@ function PocketPay(){
               Pockets are presented as personal containers you create to keep money for specific purposes. Althous you can automate funding the wallets, they are not for savings. they are made to set money aside to pay for expenses or sort bills. Create a 'Savings' pocket and watch your balance grow separately from spending money. Each pocket is visually distinct so you can tell them apart instantly.
               The core flow is simple: get paid → split money into pockets → bills pay automatically or you get reminders. No more mental tracking."
           />
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1770249467/My%20Portfolio/pocketpay/pocketpay_flow.png" alt="pocketpay flow"/>
 
           <Subheader text="Key Design Decisions" />
           <BodyText text="I designed for automatic bill payments where possible. Link your light pocket to your prepaid meter, and the app can buy tokens automatically when the goal is reached. For bills that can't automate (like market runs), you get smart reminders based on your pocket's due date."
@@ -101,7 +114,17 @@ function PocketPay(){
            We also used progress bars for goal-based pockets so you can see savings growing over time."
           />
         </section>
-        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1768564843/My%20Portfolio/pocketpay/pocketpay04.png" alt="Pocketpay image"/>
+
+        <section>
+          <Subheader text="Insights That Informed the Solution" />
+          <BodyText text="
+            <ul>
+              <li>People already organize money in their heads—they just need a tool that matches how they naturally think</li>
+              <li>The real problem isn't moving money, it's knowing where it needs to go before bills hit</li>
+              <li>Making mental allocations visible removes the guesswork and prevents overspending</li>
+              <li>People need help planning ahead, not just tracking what already happened</li>
+            </ul>"/>
+        </section>
 
         <section>
           <BillboardText text="The Implementation" />

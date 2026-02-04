@@ -72,9 +72,14 @@ function Coducate(){
         <section>
           <BillboardText text="Discovery"/>
           <BodyText
-              text="Talked to 18 students and 3 lecturers across three Nigerian universities. 
-              <br>Students hate writing pseudocode on paper. No syntax checking, no way to test if code runs, arbitrary partial credit. Lecturers spent 6-8 hours grading 100+ paper scripts, deciphering handwriting, manually checking logic. 
-              <br><br>Ironically, Universities have computer labs but no assessment software, so paper remained default despite having the infrastructure. Both sides wanted the same thing: actual coding environments during exams." 
+              text="<p>We interviewed 18 students and 3 lecturers across three Nigerian universities to understand the pain points of paper-based pseudocode exams.</p>
+                    <h3>Key Findings</h3>
+                    <ul>
+                      <li>Students find paper pseudocode frustrating—no syntax checking, no way to test logic, and grading feels arbitrary</li>
+                      <li>Lecturers spend 6-8 hours grading 100+ scripts, struggling with handwriting and manually tracing through logic</li>
+                      <li>The current process wastes time for everyone while failing to actually test whether students understand how code works</li>
+                      <li>Both groups want a better way but are stuck with outdated assessment methods</li>
+                    </ul>" 
             />
         </section>
         <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1768565850/My%20Portfolio/coducate/coducate04.png" alt="coducate cover"/>
@@ -92,17 +97,31 @@ function Coducate(){
           <br><br>'Google Classroom' handles assignment submission but has no code execution environment. Existing education platforms assume reliable internet and power—deal-breakers for Nigerian infrastructure. 
           <br><br>We built specifically for Nigerian university constraints: unstable power, spotty internet, shared computer labs, and the assumption of zero-budget departments."
           />
+      
 
           <Subheader text="Ideation" />
-          <BodyText text="We created three sections of the platform. 
-          <br>Lecturer Dashboard for drag-and-drop test creation, time limits, and live monitoring showing each student's progress with suspicious activity flagging. 
-          <br>Student Portal with clean code editor (syntax highlighting, autocomplete), test cases to validate answers, and persistent timer. 
-          <br>Admin Panel for managing all accounts and platform analytics. 
-          <br><br> Key priorities: auto-save every 30 seconds for reliability, offline mode for coding when connection drops, and plagiarism detection comparing code similarity."
+          <BodyText text="
+          <h3>We created three sections of the platform.</h3>
+            <ul>
+              <li>Lecturer Dashboard for easy test creation, time limits, and live monitoring showing each student's progress with suspicious activity flagging</li>
+              <li>Student Portal with clean code editor (syntax highlighting, autocomplete), test cases to validate answers, and persistent timer</li>
+              <li>Admin Panel for managing all accounts and platform analytics</li>
+            </ul>"
           />
 
+          <BodyText text="
+          <h3>Users' Journeys and Why They Matter to Them</h3>
+            <ul>
+              <li><b>Students:</b> Log in → see dashboard with courses → click on course → view available tests → start test → write code in editor with syntax highlighting → run → submit </br> no more guessing if their logic works or waiting weeks for results</li>
+              <li><b>Lecturers:</b> Log in → create new test with questions → set time limits and rules → publish to students → monitor live progress → auto-grade → export results </br> turning 6-8 hours of grading into a few clicks</li>
+              <li><b>Admins:</b> Log in → view all users and accounts → manage users and accounts </br> keeping everything running without constant firefighting</li>
+              <li>Everyone gets what they need without the chaos—clear paths from start to finish with no lost work, wasted time, or confusion</li>
+            </ul>"
+          />
+          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1770249383/My%20Portfolio/coducate/coducate_flow.png" alt="coducate flow"/>
+
           <Subheader text="Iteration" />
-          <BodyText text="Tried webcam monitoring but it affected  internet bandwidth a lot, and was very invasive. 
+          <BodyText text="We tried to webcam monitoring but put the idea on hold becaus of concerns with quality of internet bandwidth. 
           <br>Pivoted to behavior-based detection instead: Detecting how many times the students lost focus and only sharing their screen. Tested with 45 students—3% false positive rate, and lecturers felt confident without being invasive. This pivot was critical: 5/6 pilot lecturers agreed to abandon paper with behavior monitoring vs. 1/6 with webcams."
           />
         </section>
