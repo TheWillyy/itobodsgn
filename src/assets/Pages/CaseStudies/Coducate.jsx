@@ -112,9 +112,9 @@ function Coducate(){
           <BodyText text="
           <h3>Users' Journeys and Why They Matter to Them</h3>
             <ul>
-              <li><b>Students:</b> Log in → see dashboard with courses → click on course → view available tests → start test → write code in editor with syntax highlighting → run → submit </br> no more guessing if their logic works or waiting weeks for results</li>
-              <li><b>Lecturers:</b> Log in → create new test with questions → set time limits and rules → publish to students → monitor live progress → auto-grade → export results </br> turning 6-8 hours of grading into a few clicks</li>
-              <li><b>Admins:</b> Log in → view all users and accounts → manage users and accounts </br> keeping everything running without constant firefighting</li>
+              <li>Students:</br> Log in → see dashboard with courses → click on course → view available tests → start test → write code in editor with syntax highlighting → run → submit </br> no more guessing if their logic works or waiting weeks for results</li>
+              <li>Lecturers:</br> Log in → create new test with questions → set time limits and rules → publish to students → monitor live progress → auto-grade → export results </br> turning 6-8 hours of grading into a few clicks</li>
+              <li>Admins:</br> Log in → view all users and accounts → manage users and accounts </br> keeping everything running without constant firefighting</li>
               <li>Everyone gets what they need without the chaos—clear paths from start to finish with no lost work, wasted time, or confusion</li>
             </ul>"
           />

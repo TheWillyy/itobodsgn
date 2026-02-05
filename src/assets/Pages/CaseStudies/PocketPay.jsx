@@ -105,7 +105,6 @@ function PocketPay(){
               Pockets are presented as personal containers you create to keep money for specific purposes. Althous you can automate funding the wallets, they are not for savings. they are made to set money aside to pay for expenses or sort bills. Create a 'Savings' pocket and watch your balance grow separately from spending money. Each pocket is visually distinct so you can tell them apart instantly.
               The core flow is simple: get paid → split money into pockets → bills pay automatically or you get reminders. No more mental tracking."
           />
-          <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1770249467/My%20Portfolio/pocketpay/pocketpay_flow.png" alt="pocketpay flow"/>
 
           <Subheader text="Key Design Decisions" />
           <BodyText text="I designed for automatic bill payments where possible. Link your light pocket to your prepaid meter, and the app can buy tokens automatically when the goal is reached. For bills that can't automate (like market runs), you get smart reminders based on your pocket's due date."
@@ -114,6 +113,7 @@ function PocketPay(){
            We also used progress bars for goal-based pockets so you can see savings growing over time."
           />
         </section>
+        <ImgLarge src="https://res.cloudinary.com/dhlkiskhn/image/upload/v1770249467/My%20Portfolio/pocketpay/pocketpay_flow.png" alt="pocketpay flow"/>
 
         <section>
           <Subheader text="Insights That Informed the Solution" />
