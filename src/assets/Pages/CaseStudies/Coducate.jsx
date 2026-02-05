@@ -72,7 +72,7 @@ function Coducate(){
         <section>
           <BillboardText text="Discovery"/>
           <BodyText
-              text="<p>We interviewed 18 students and 3 lecturers across three Nigerian universities to understand the pain points of paper-based pseudocode exams.</p>
+              text="We interviewed 18 students and 3 lecturers across three Nigerian universities to understand the pain points of paper-based pseudocode exams.
                     <h3>Key Findings</h3>
                     <ul>
                       <li>Students find paper pseudocode frustrating—no syntax checking, no way to test logic, and grading feels arbitrary</li>
